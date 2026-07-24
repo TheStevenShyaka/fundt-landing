@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundt — Flow</title>
+  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework." />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="taste-flow.css" />
+</head>
+<body class="variant-taste-flow">
+<!--
+THESIS: Money is a stream; Fundt is the map of where it forks. Refuse card grids.
+OWN-WORLD: Gallery-white, one blue stream, animated SVG forks into category buckets. Nunito 500/700.
+STORY: See the fork diagram, understand instantly, join.
+FIRST VIEWPORT: Headline, the flow drawing, waitlist under it.
+FORM: Taste / Flow. V6 M5 D2.
+-->
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="link" href="../privacy.html">Privacy</a>
+</header>
+<main id="top">
+  <section class="hero">
+    <h1>One stream in.<br /><em>Every franc</em> accounted for.</h1>
+    <p>Fundt turns your MoMo messages into a living map of the month. You do nothing. It sorts itself.</p>
+  </section>
+  <div class="flow" aria-label="Money flow diagram with sample amounts">
+    <div class="source"><span class="coin"><i></i>MoMo · your month</span></div>
+    <svg class="forks" viewBox="0 0 900 150" aria-hidden="true">
+      <path d="M450 6 C450 70 90 60 90 142" stroke="#0090ff"/>
+      <path d="M450 6 C450 76 270 66 270 142" stroke="#fbbf24"/>
+      <path d="M450 6 C450 84 450 84 450 142" stroke="#a78bfa"/>
+      <path d="M450 6 C450 76 630 66 630 142" stroke="#ec4899"/>
+      <path d="M450 6 C450 70 810 60 810 142" stroke="#22c55e"/>
+    </svg>
+    <div class="buckets">
+      <div class="bucket b1"><span class="dot">⚡</span><div class="name">Electricity</div><div class="val">R₣ 12,500</div></div>
+      <div class="bucket b2"><span class="dot">🚌</span><div class="name">Transport</div><div class="val">R₣ 6,300</div></div>
+      <div class="bucket b3"><span class="dot">📱</span><div class="name">Phone Bill</div><div class="val">R₣ 4,000</div></div>
+      <div class="bucket b4"><span class="dot">👨‍👩‍👧</span><div class="name">Friends & Family</div><div class="val">R₣ 21,000</div></div>
+      <div class="bucket b5"><span class="dot">🛒</span><div class="name">Groceries</div><div class="val">R₣ 9,800</div></div>
+    </div>
+    <p class="sample">Sample month, for illustration.</p>
+  </div>
+  <div class="center" id="waitlist">
+  <form class="waitlist-form" novalidate>
+    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+  </form>
+  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p></div>
+  <section class="threes">
+    <div class="three"><h3>On your phone</h3><p>Messages are read and sorted on device. Nothing leaves without your say-so.</p></div>
+    <div class="three"><h3>Made for waves</h3><p>Steady salary or gig money in bursts — Fundt tracks the month you actually had.</p></div>
+    <div class="three"><h3>Zero homework</h3><p>No manual entry marathons. Open the app, see the picture, get on with your day.</p></div>
+  </section>
+  <div class="prov">
+    <img src="../assets/electricity.png" alt="Electricity" />
+    <img src="../assets/wasac.png" alt="WASAC" />
+    <img src="../assets/canal-plus.png" alt="Canal+" />
+    <img src="../assets/tap-and-go.png" alt="Tap and Go" />
+    <img src="../assets/phone-bill.png" alt="Phone bill" />
+    <img src="../assets/rra.png" alt="RRA" />
+  </div>
+</main>
+<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>
+<script src="../shared/waitlist.js"></script>
+</body>
+</html>

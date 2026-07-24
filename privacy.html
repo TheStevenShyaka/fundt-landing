@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Fundt</title>
+  <meta name="description" content="Fundt Privacy Policy. How we collect, store, and protect your data." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="policy.css" />
+</head>
+<body class="policy-page">
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/icon.png" alt="Fundt logo" class="nav-logo" />
+        <span class="nav-name">Fundt</span>
+      </a>
+      <a href="index.html#waitlist" class="btn btn-primary btn-nav">Join the Waitlist</a>
+    </nav>
+  </header>
+
+  <main class="policy-doc">
+    <p class="policy-kicker">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="policy-meta">Last updated: June 26, 2026</p>
+
+    <p class="policy-lead">
+      This policy explains what Fundt collects, how it is stored, and the choices you have.
+      It applies to the Fundt mobile app.
+    </p>
+
+    <hr class="policy-rule" />
+
+    <section>
+      <h2>Who we are</h2>
+      <p>
+        Fundt is a personal budgeting app that helps you track and categorize money you send
+        using MTN MoMo and phone airtime.
+      </p>
+      <p>
+        Fundt is operated by <strong>Fundt Founder</strong>. For privacy questions, contact
+        <a href="mailto:support@fundt.app">support@fundt.app</a>.
+      </p>
+      <p>We do not process payments and never see your MoMo PIN or balance.</p>
+    </section>
+
+    <section>
+      <h2>The data we collect</h2>
+      <p>
+        <strong>Account &amp; identity</strong> (only if you sign in): your name, email, and
+        profile photo via Google or Apple through Clerk.
+      </p>
+      <p>
+        <strong>Onboarding answers:</strong> income rhythm, tracking habit, and goals — used to
+        personalize your experience.
+      </p>
+      <p>
+        <strong>Budgeting data:</strong> categories, budgets, and transactions you create,
+        including amounts and recipients.
+      </p>
+      <p>
+        <strong>Contacts</strong> (optional): read on your device only to pick a recipient.
+        Contacts never leave your phone.
+      </p>
+      <p>
+        <strong>Product usage:</strong> coarse events such as onboarding progress and Cloud Sync
+        prompts. In Local Mode this stays on your device until you consent to Cloud Sync.
+      </p>
+    </section>
+
+    <section>
+      <h2>How your data is stored</h2>
+      <p>
+        <strong>Local Mode:</strong> all data stays on your device only. Nothing is sent to us.
+      </p>
+      <p>
+        <strong>Cloud Sync</strong> (after consent): your profile, categories, budgets,
+        transactions, and product usage data sync to Convex. Identity is managed by Clerk.
+      </p>
+      <p>Your session token is stored in your device encrypted keychain.</p>
+    </section>
+
+    <section>
+      <h2>Where your data is processed</h2>
+      <p>
+        Cloud Sync uses Clerk and Convex, which process data on servers outside Rwanda. By
+        signing in and consenting to Cloud Sync, you consent to this cross-border transfer.
+      </p>
+      <p>If you prefer your data never to leave your device, use Fundt in Local Mode.</p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <ul>
+        <li><strong>Access</strong> — export your data from Privacy &amp; data → Download my data.</li>
+        <li><strong>Correct</strong> — edit profile details under Personal details (coming soon).</li>
+        <li>
+          <strong>Delete</strong> — delete your account under Privacy &amp; data. Signed-in
+          accounts enter a 7-day grace period before permanent removal.
+        </li>
+        <li><strong>Withdraw consent</strong> — switch to Local Mode or delete your account.</li>
+        <li><strong>Complain</strong> — contact the National Cyber Security Authority (NCSA), Rwanda.</li>
+      </ul>
+      <p>Email <a href="mailto:support@fundt.app">support@fundt.app</a> to exercise any right.</p>
+    </section>
+
+    <section>
+      <h2>How long we keep your data</h2>
+      <p>
+        We keep data while your account is active. Deleted accounts are permanently removed after
+        the 7-day grace period. Local-only data is removed when you delete the app or clear local
+        data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>Fundt is for users 18 and older. We do not knowingly collect data from children.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Fundt Founder<br />
+        <a href="mailto:support@fundt.app">support@fundt.app</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/icon.png" alt="Fundt logo" class="nav-logo" />
+        <span class="nav-name">Fundt</span>
+      </a>
+      <p>&copy; <span id="year"></span> Fundt. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

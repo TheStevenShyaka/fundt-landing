@@ -1,0 +1,116 @@
+/* =====================================================
+   Privacy policy — markdown-style reading layout
+   ===================================================== */
+
+.policy-page {
+  --font: "Nunito", system-ui, sans-serif;
+  background: #fbfcfe;
+  font-family: var(--font);
+  font-weight: 500;
+}
+
+.policy-doc {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.policy-kicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-subtle);
+  margin-bottom: 12px;
+}
+
+.policy-doc h1 {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.policy-meta {
+  margin-top: 14px;
+  font-size: 14.5px;
+  color: var(--ink-subtle);
+}
+
+.policy-lead {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink-muted);
+  text-wrap: pretty;
+}
+
+.policy-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+.policy-doc section + section {
+  margin-top: 40px;
+}
+
+.policy-doc h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.policy-doc p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  text-wrap: pretty;
+}
+
+.policy-doc p + p {
+  margin-top: 14px;
+}
+
+.policy-doc strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.policy-doc a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.policy-doc a:hover {
+  text-decoration: underline;
+}
+
+.policy-doc ul {
+  margin: 8px 0 0;
+  padding-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.policy-doc li {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink-muted);
+  text-wrap: pretty;
+}
+
+.policy-doc li strong {
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .policy-doc {
+    padding-top: 48px;
+  }
+}

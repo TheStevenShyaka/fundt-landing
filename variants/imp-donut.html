@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundt — Donut</title>
+  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework." />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="imp-donut.css" />
+</head>
+<body class="variant-imp-donut">
+<!--
+THESIS: One chart answers the month's question - lead with the real six-month average spend from History. Refuse decorative heroes.
+OWN-WORLD: Paper white page; Fundt half-phone (#111116) with CategorySixMonthChart; category legend as typographic list with app emojis. Nunito.
+STORY: See the answer first, learn the mechanism second, join third.
+FIRST VIEWPORT: Half-phone six-month chart + category legend + waitlist.
+FORM: Impeccable / Donut. Persuade.
+-->
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="link" href="../privacy.html">Privacy</a>
+</header>
+<main id="top">
+  <section class="hero">
+    <div>
+      <div class="phone-stage" aria-label="Sample Fundt History six-month average spending chart">
+        <div class="app">
+          <div class="screen">
+            <div class="status"><span>9:41</span><span>●●●</span></div>
+            <div class="hist-head">
+              <div class="t">History</div>
+              <span class="pill">Feb — Jul</span>
+            </div>
+            <div class="six">
+              <div class="eyebrow">AVERAGE SPENDING</div>
+              <div class="amt"><span class="n">57,850</span><span class="c">R₣</span></div>
+              <div class="six-leg">
+                <span><i style="background:#0090ff"></i>Selected</span>
+                <span><i style="background:#3D9B6A"></i>Below</span>
+                <span><i style="background:#8b8d98"></i>Above</span>
+              </div>
+              <div class="chart">
+                <div class="avg-line" aria-hidden="true"></div>
+                <div class="bars">
+                  <div class="bar-col"><span class="val">48k</span><div class="bar below" style="height:68%"></div></div>
+                  <div class="bar-col"><span class="val">62k</span><div class="bar above" style="height:87%"></div></div>
+                  <div class="bar-col"><span class="val">52k</span><div class="bar below" style="height:73%"></div></div>
+                  <div class="bar-col"><span class="val">71k</span><div class="bar above" style="height:100%"></div></div>
+                  <div class="bar-col"><span class="val">58k</span><div class="bar above" style="height:82%"></div></div>
+                  <div class="bar-col sel"><span class="val">56k</span><div class="bar" style="height:79%"></div></div>
+                </div>
+                <div class="months"><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span class="sel on">JUL</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mock-note">Sample data · six-month average from History</p>
+    </div>
+    <div class="hero-copy">
+      <h1>Where did it go?<br />Answered.</h1>
+      <div class="legend">
+        <div><span class="l"><span class="e">👨‍👩‍👧</span>Friends & Family</span><span class="v">R₣ 21,000 · 37%</span></div>
+        <div><span class="l"><span class="e">🛒</span>Groceries</span><span class="v">R₣ 12,500 · 22%</span></div>
+        <div><span class="l"><span class="e">🍽️</span>Restaurants</span><span class="v">R₣ 9,800 · 18%</span></div>
+        <div><span class="l"><span class="e">🚌</span>Transport</span><span class="v">R₣ 6,300 · 11%</span></div>
+        <div><span class="l"><span class="e">📱</span>Phone Bill</span><span class="v">R₣ 6,500 · 12%</span></div>
+      </div>
+      <div id="waitlist">
+  <form class="waitlist-form" novalidate>
+    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+  </form>
+  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p></div>
+    </div>
+  </section>
+  <section class="how">
+    <h2>You never feed it a number.</h2>
+    <div class="how-rows">
+      <div class="how-row"><span class="n">1</span><h3>Your MoMo texts arrive</h3><p>Every spend already leaves an SMS receipt on your phone. That's the data.</p></div>
+      <div class="how-row"><span class="n">2</span><h3>Fundt reads them on device</h3><p>Parsing happens on your phone. Nothing leaves without your say-so, nothing is sold, deletion is real.</p></div>
+      <div class="how-row"><span class="n">3</span><h3>The chart draws itself</h3><p>Categories, totals, month view - ready when you open the app. Waves of income welcome.</p></div>
+    </div>
+  </section>
+  <div class="prov">
+    <span>Understands</span>
+    <img src="../assets/electricity.png" alt="Electricity" />
+    <img src="../assets/wasac.png" alt="WASAC" />
+    <img src="../assets/canal-plus.png" alt="Canal+" />
+    <img src="../assets/tap-and-go.png" alt="Tap and Go" />
+    <img src="../assets/phone-bill.png" alt="Phone bill" />
+    <img src="../assets/rra.png" alt="RRA" />
+  </div>
+  <section class="cta">
+    <div class="in">
+      <h2>Your donut is waiting.</h2>
+      <p>Join the waitlist and be first when Fundt ships.</p>
+      
+  <form class="waitlist-form" novalidate>
+    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+  </form>
+  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
+    </div>
+  </section>
+</main>
+<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>
+<script src="../shared/waitlist.js"></script>
+</body>
+</html>

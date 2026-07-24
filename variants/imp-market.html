@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundt — Market</title>
+  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework." />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="imp-market.css" />
+</head>
+<body class="variant-imp-market">
+<!--
+THESIS: Money in Rwanda is loud, colorful, alive - the landing should be too. Refuse fintech gray.
+OWN-WORLD: Full-bleed saturated blocks (cobalt, mango, leaf, ink), price-tag stickers, marquee. Nunito 700 at poster scale.
+STORY: Joy first, mechanism second, trust third, action last.
+FIRST VIEWPORT: Cobalt block with giant claim + sticker.
+FORM: Impeccable / Market. Persuade.
+-->
+
+<main id="top">
+  <section class="block b-cobalt hero-block">
+    <nav class="nav">
+      <span class="brand"><img src="../assets/icon.png" alt="" />Fundt</span>
+      <a href="../privacy.html">Privacy</a>
+    </nav>
+    <div class="block-in">
+      <h1>Every franc, accounted for.</h1>
+      <p class="sub">Fundt reads your MoMo messages and sorts the whole month - bills, rides, airtime, people - while you live your life.</p>
+      <div id="waitlist">
+        <form class="waitlist-form" novalidate>
+          <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+          <button type="submit" class="btn">Join the Waitlist</button>
+        </form>
+        <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
+      </div>
+    </div>
+    <div class="sticker" aria-hidden="true"><div class="s1">June · sample</div><div class="s2">56,100 RWF</div></div>
+  </section>
+  <div class="marquee" aria-hidden="true">
+    <div class="mq">
+      <span>AIRTIME</span><span>WASAC</span><span>TAP&GO</span><span>CANAL+</span><span>ELECTRICITY</span><span>TRANSFERS</span>
+      <span>AIRTIME</span><span>WASAC</span><span>TAP&GO</span><span>CANAL+</span><span>ELECTRICITY</span><span>TRANSFERS</span>
+    </div>
+  </div>
+  <section class="block b-mango">
+    <div class="block-in">
+      <h2>The bills you actually pay.</h2>
+      <div class="grid">
+        <div class="tagcard"><img src="../assets/electricity.png" alt="" /><div class="t">Electricity</div><div class="d">Cash power, logged the second the SMS lands.</div></div>
+        <div class="tagcard"><img src="../assets/wasac.png" alt="" /><div class="t">WASAC</div><div class="d">Water bill in, water bill sorted.</div></div>
+        <div class="tagcard"><img src="../assets/tap-and-go.png" alt="" /><div class="t">Tap&Go</div><div class="d">Every fare counted, even the 300 RWF ones.</div></div>
+        <div class="tagcard"><img src="../assets/canal-plus.png" alt="" /><div class="t">Canal+</div><div class="d">Subscriptions stop hiding.</div></div>
+        <div class="tagcard"><img src="../assets/phone-bill.png" alt="" /><div class="t">Airtime & bundles</div><div class="d">The small spends that eat the month.</div></div>
+        <div class="tagcard"><img src="../assets/rra.png" alt="" /><div class="t">RRA & more</div><div class="d">If MoMo paid it, Fundt saw it.</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="block b-leaf">
+    <div class="block-in">
+      <h2>Loud page. Quiet app.</h2>
+      <p class="lead">Your money data never joins a market. It is parsed on your phone, shown to you alone, and deleted for good when you say so.</p>
+      <div class="trust">
+        <div>On device<small>Messages are read and sorted on your phone.</small></div>
+        <div>Never sold<small>No fine print that says otherwise.</small></div>
+        <div>Actually deleted<small>Remove your data anytime. Gone is gone.</small></div>
+      </div>
+    </div>
+  </section>
+  <section class="block b-ink">
+    <div class="block-in center">
+      <img class="mark" src="../assets/icon.png" alt="Fundt" />
+      <h2>Be first in line.</h2>
+      <form class="waitlist-form" novalidate>
+        <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+        <button type="submit" class="btn" style="background:var(--cobalt)">Join the Waitlist</button>
+      </form>
+      <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
+    </div>
+  </section>
+</main>
+<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>
+<script src="../shared/waitlist.js"></script>
+</body>
+</html>

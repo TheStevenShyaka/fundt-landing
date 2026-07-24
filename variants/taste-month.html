@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundt — Month</title>
+  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework." />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="taste-month.css" />
+</head>
+<body class="variant-taste-month">
+<!--
+THESIS: A month is 30 small days of spending; watch them light up and make sense. Refuse abstract hero art.
+OWN-WORLD: Deep night #101318 with glowing day-cells in category colors, Nunito 500/700.
+STORY: The calendar fills → "month-end, no mystery" → waitlist.
+FIRST VIEWPORT: Copy left, living calendar right.
+FORM: Taste / Month. V7 M7 D3.
+-->
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="link" href="../privacy.html">Privacy</a>
+</header>
+<main id="top">
+  <section class="hero">
+    <div>
+      <h1>Thirty days.<br />Zero <em>mysteries</em>.</h1>
+      <p class="hero-sub">Every day your MoMo moves, Fundt fills in the picture. By month-end you already know the answer.</p>
+      <div id="waitlist">
+  <form class="waitlist-form" novalidate>
+    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+  </form>
+  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p></div>
+    </div>
+    <div class="cal" aria-label="A sample month filling with categorized spending">
+      <div class="cal-head"><span class="m">June</span><span class="t">56,100 RWF so far</span></div>
+      <div class="grid">
+        <div class="day f"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day"></div><div class="day f f4"></div><div class="day f f5"></div>
+        <div class="day"></div><div class="day f f2"></div><div class="day f"></div><div class="day"></div><div class="day f f6"></div><div class="day f f5"></div><div class="day"></div>
+        <div class="day f f4"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day f"></div><div class="day"></div><div class="day f f5"></div>
+        <div class="day"></div><div class="day f f6"></div><div class="day f f2"></div><div class="day"></div><div class="day f f4"></div><div class="day f"></div><div class="day"></div>
+        <div class="day f f5"></div><div class="day f f2"></div><div class="day"></div><div class="day f f3"></div><div class="day"></div><div class="day f"></div><div class="day f f4"></div>
+      </div>
+      <div class="legend">
+        <span><span class="e">⚡</span>Electricity</span>
+        <span><span class="e">🚌</span>Transport</span>
+        <span><span class="e">📱</span>Phone Bill</span>
+        <span><span class="e">👨‍👩‍👧</span>Friends & Family</span>
+        <span><span class="e">🛒</span>Groceries</span>
+        <span><span class="e">🍽️</span>Restaurants</span>
+      </div>
+      <p class="cal-note">Sample month, for illustration.</p>
+    </div>
+  </section>
+  <section class="claims">
+    <div class="claim"><h3>It sorts itself</h3><p>Airtime, bills, transfers, the midnight buy - each lands in its bucket, automatically.</p></div>
+    <div class="claim"><h3>On your phone</h3><p>Messages are parsed on device. Nothing leaves without your say-so. Nothing is sold.</p></div>
+    <div class="claim"><h3>Waves welcome</h3><p>Steady salary or gig bursts - Fundt tracks the month you actually had.</p></div>
+  </section>
+  <section class="cta">
+    <h2>Be first when it ships.</h2>
+    
+  <form class="waitlist-form" novalidate>
+    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
+    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+  </form>
+  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
+  </section>
+</main>
+<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>
+<script src="../shared/waitlist.js"></script>
+</body>
+</html>

@@ -1,40 +1,56 @@
 # Fundt Landing Page
 
-A static, zero-dependency landing page for collecting waitlist emails before the app ships.
+Waitlist landing concepts for Fundt, with a studio chrome to compare design directions.
 
 ## Run it locally
-
-Any static server works. From this folder:
 
 ```bash
 npx serve .
 ```
 
-Or just open `index.html` directly in a browser.
+Open the root URL. Use:
+
+1. **Skill output** dropdown - switch between `design-taste-frontend` and `impeccable`
+2. **Style tabs** - the shortlisted concepts per skill
+
+Deep links look like `#taste/taste-flow` or `#impeccable/imp-donut`.
+
+All concepts use **Nunito 500/700** (the app's typeface) and share one category color palette (`--cat-*` vars at the top of each variant CSS).
+
+## Concept map (shortlist)
+
+| Skill | Tab | File | Idea |
+| --- | --- | --- | --- |
+| Taste | Flow | `variants/taste-flow.html` | One money stream forking into buckets (animated SVG) |
+| Taste | Buckets | `variants/taste-buckets.html` | The month as fat, rotated, colored pills |
+| Taste | Month | `variants/taste-month.html` | Calendar cells light up day by day |
+| Impeccable | Donut | `variants/imp-donut.html` | Half-phone History chart + category emoji legend |
+| Impeccable | Market | `variants/imp-market.html` | Full-bleed cobalt/mango/leaf color blocks, price-tag stickers |
+
+Rebuild variants after editing defs:
+
+```bash
+node scripts/build-variants.mjs
+```
+
+Definitions live in `scripts/variant-defs.mjs` (taste) and `scripts/variant-defs-imp.mjs` (impeccable). Dropped concepts stay in those files but are filtered out by `KEEP` in `scripts/build-variants.mjs`.
 
 ## Collecting emails
 
-Right now signups are saved to the browser's `localStorage` (key: `fundt-waitlist`) so the form flow is testable. To collect them for real, open `script.js` and set:
+Shared handler: `shared/waitlist.js`. Set:
 
 ```js
 const WAITLIST_ENDPOINT = "https://formspree.io/f/your-form-id";
 ```
 
-Any endpoint that accepts `POST { "email": "..." }` as JSON works (Formspree, Google Apps Script, your own backend).
+Until then, emails store in `localStorage` under `fundt-waitlist`.
 
-## Adding the product teaser video
+## Privacy Policy
 
-The phone mockup in the hero is wired for a demo video:
+`privacy.html` is unchanged and still the app's policy URL target.
 
-1. Drop your screen recording at `assets/demo.mp4` (portrait, roughly 9:19.5 aspect).
-2. That's it — the page auto-detects the file, hides the placeholder, and loops the video muted.
+## Product context
 
-To use a GIF instead, replace the `<video>` tag in `index.html` with
-`<img class="screen-video" src="assets/demo.gif" alt="Fundt demo" />` and delete the placeholder `div`.
-
-## Structure
-
-- `index.html` — the whole page (hero, features, how it works, privacy, audience, CTA)
-- `styles.css` — light theme built on the app's brand accent `#0090ff` (from `fundt-frontend/theme/tokens.ts`), DM Sans throughout
-- `script.js` — waitlist form handling + demo video detection
-- `assets/` — logo mark, favicon, and bill provider icons copied from the app
+- `PRODUCT.md` - durable product truth (Impeccable init)
+- `DESIGN.md` - notes that this folder is an exploration set
+- Original landing archived at `variants/_legacy-current.html`

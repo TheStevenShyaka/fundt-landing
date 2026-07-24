@@ -3,264 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fundt — Know where your MoMo goes</title>
-  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework. Join the waitlist." />
+  <title>Fundt — Landing concepts</title>
+  <meta name="description" content="Fundt landing design concepts from design-taste-frontend and impeccable." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="switcher.css" />
 </head>
 <body>
-
-  <!-- ======= Nav ======= -->
-  <header class="nav-wrap">
-    <nav class="nav">
-      <a class="nav-brand" href="#top">
-        <img src="assets/icon.png" alt="Fundt logo" class="nav-logo" />
-        <span class="nav-name">Fundt</span>
-      </a>
-      <div class="nav-links">
-        <a href="#what-it-is">What it is</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#who-its-for">Who it&rsquo;s for</a>
-      </div>
-      <a href="#waitlist" class="btn btn-primary btn-nav">Join the Waitlist</a>
-    </nav>
-  </header>
-
-  <main id="top">
-
-    <!-- ======= Hero ======= -->
-    <section class="hero">
-      <div class="blob blob-blue" aria-hidden="true"></div>
-      <div class="blob blob-green" aria-hidden="true"></div>
-
-      <h1 class="hero-title">
-        Know where your<br />
-        <span class="accent">MoMo</span> goes.
-      </h1>
-
-      <p class="hero-sub">
-        Whether your income is steady or comes in waves, Fundt shows you
-        where your MoMo spending went, without turning budgeting into homework.
-      </p>
-
-      <form class="waitlist-form" id="waitlist" novalidate>
-        <input
-          type="email"
-          name="email"
-          class="waitlist-input"
-          placeholder="you@example.com"
-          autocomplete="email"
-          required
-          aria-label="Email address"
-        />
-        <button type="submit" class="btn btn-primary">Join the Waitlist</button>
-      </form>
-      <p class="waitlist-note" data-default="Be the first to know when Fundt lands on your phone.">
-        Be the first to know when Fundt lands on your phone.
-      </p>
-
-      <!-- ======= Phone mockup / product teaser ======= -->
-      <div class="phone-stage">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <!--
-              To tease the product: drop your demo at assets/demo.mp4
-              (or swap the <video> for <img src="assets/demo.gif">)
-              and remove the .screen-placeholder div below.
-            -->
-            <video
-              class="screen-video"
-              src="assets/demo.mp4"
-              autoplay muted loop playsinline
-              hidden
-            ></video>
-            <div class="screen-placeholder">
-              <img src="assets/icon.png" alt="" class="placeholder-mark" />
-              <span>Product preview<br />coming soon</span>
-            </div>
-          </div>
+  <div class="studio" id="studio">
+    <div class="studio-bar" role="region" aria-label="Concept switcher">
+      <div class="studio-brand">
+        <img src="assets/icon.png" alt="" width="28" height="28" />
+        <div>
+          <strong>Fundt landing</strong>
+          <span>Concept studio</span>
         </div>
       </div>
-    </section>
 
-    <!-- ======= What it is ======= -->
-    <section class="section card-section" id="what-it-is">
-      <h2 class="section-title">Built for real money life</h2>
-      <p class="section-sub">
-        No spreadsheets. No guilt trips. Just a clear picture of your money.
-      </p>
-      <div class="feature-grid">
-        <div class="feature">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 3v18h18" />
-              <path d="M7 14l4-4 3 3 5-6" />
-            </svg>
-          </div>
-          <h3>See every franc</h3>
-          <p>Your MoMo spending, sorted into categories automatically. Know what went where at a glance.</p>
-        </div>
-        <div class="feature">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 12c2-4 6-6 10-6s8 2 10 6" />
-              <path d="M2 12c2 4 6 6 10 6s8-2 10-6" />
-              <path d="M2 12h20" />
-            </svg>
-          </div>
-          <h3>Made for waves</h3>
-          <p>Income that comes and goes? Fundt adapts to how you actually earn, not how a textbook says you should.</p>
-        </div>
-        <div class="feature">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 2L4 14h7l-1 8 10-14h-7l0-6z" />
-            </svg>
-          </div>
-          <h3>Zero homework</h3>
-          <p>No manual entry marathons. Open the app, see your picture, get on with your day.</p>
-        </div>
-      </div>
-    </section>
+      <label class="skill-field">
+        <span>Skill output</span>
+        <select id="skillSelect" aria-label="Skill output">
+          <option value="taste">design-taste-frontend</option>
+          <option value="impeccable">impeccable</option>
+        </select>
+      </label>
 
-    <!-- ======= How it works ======= -->
-    <section class="section" id="how-it-works">
-      <h2 class="section-title">How it works</h2>
-      <p class="section-sub">Three steps. That&rsquo;s the whole manual.</p>
-      <ol class="steps">
-        <li class="step">
-          <span class="step-num">1</span>
-          <h3>Connect your MoMo</h3>
-          <p>Fundt reads your transaction messages on your phone. Nothing leaves your device without your say-so.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">2</span>
-          <h3>Watch it sort itself</h3>
-          <p>Airtime, bills, transfers, that thing you bought at midnight &mdash; everything lands in the right bucket.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">3</span>
-          <h3>Spend with your eyes open</h3>
-          <p>A clean monthly picture that tells you what&rsquo;s really going on, so the end of the month stops being a surprise.</p>
-        </li>
-      </ol>
+      <div class="style-tabs" role="tablist" aria-label="Style options" id="styleTabs"></div>
 
-      <div class="providers">
-        <p class="providers-label">Understands the bills you actually pay</p>
-        <div class="providers-row">
-          <img src="assets/electricity.png" alt="Electricity" />
-          <img src="assets/wasac.png" alt="WASAC water" />
-          <img src="assets/canal-plus.png" alt="Canal+" />
-          <img src="assets/tap-and-go.png" alt="Tap&Go" />
-          <img src="assets/phone-bill.png" alt="Phone bill" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Privacy ======= -->
-    <section class="section" id="privacy">
-      <h2 class="section-title">Your money is your business</h2>
-      <p class="section-sub">And we intend to keep it that way.</p>
-      <div class="privacy-grid">
-        <article class="privacy-card">
-          <div class="privacy-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="7" y="2" width="10" height="20" rx="2" />
-              <path d="M11 18h2" />
-            </svg>
-          </div>
-          <h3>Stays on your phone</h3>
-          <p>Your transactions are processed on your device, not on someone else&rsquo;s server.</p>
-        </article>
-        <article class="privacy-card">
-          <div class="privacy-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3l7 4v5c0 5-3 9-7 9s-7-4-7-9V7l7-4z" />
-              <path d="M9 12l2 2 4-4" />
-            </svg>
-          </div>
-          <h3>Never sold</h3>
-          <p>We don&rsquo;t sell your data. There is no fine print that says otherwise.</p>
-        </article>
-        <article class="privacy-card">
-          <div class="privacy-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 6h18" />
-              <path d="M8 6V4h8v2" />
-              <path d="M19 6l-1 14H6L5 6" />
-              <path d="M10 11v6" />
-              <path d="M14 11v6" />
-            </svg>
-          </div>
-          <h3>Actually deleted</h3>
-          <p>Remove your data anytime, and it&rsquo;s gone for good. No hidden copies.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ======= Who it's for ======= -->
-    <section class="section" id="who-its-for">
-      <h2 class="section-title">Who it&rsquo;s for</h2>
-      <p class="section-sub">If MoMo is how your money moves, Fundt is for you.</p>
-      <div class="audience-grid">
-        <div class="audience">
-          <h3>The hustler</h3>
-          <p>Money in from three places, money out to ten. Fundt keeps the score so you don&rsquo;t have to.</p>
-        </div>
-        <div class="audience">
-          <h3>The planner</h3>
-          <p>You already try to budget. Fundt just removes the part where you type everything in by hand.</p>
-        </div>
-        <div class="audience">
-          <h3>The &ldquo;where did it all go?&rdquo;</h3>
-          <p>Every month ends in a mystery. Fundt solves it, receipt by receipt.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Final CTA ======= -->
-    <section class="section cta-section">
-      <div class="cta-card">
-        <img src="assets/icon.png" alt="" class="cta-mark" />
-        <h2>Get Fundt before everyone else</h2>
-        <p>We&rsquo;re putting the finishing touches on the app. Leave your email and you&rsquo;ll be first in line when it ships.</p>
-        <form class="waitlist-form waitlist-form-footer" novalidate>
-          <input
-            type="email"
-            name="email"
-            class="waitlist-input waitlist-input-dark"
-            placeholder="you@example.com"
-            autocomplete="email"
-            required
-            aria-label="Email address"
-          />
-          <button type="submit" class="btn btn-primary">Join the Waitlist</button>
-        </form>
-        <p class="waitlist-note on-dark" data-default="No spam. One email when we launch, maybe two.">
-          No spam. One email when we launch, maybe two.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <a class="nav-brand" href="#top">
-        <img src="assets/icon.png" alt="Fundt logo" class="nav-logo" />
-        <span class="nav-name">Fundt</span>
-      </a>
-      <p>&copy; <span id="year"></span> Fundt. All rights reserved.</p>
+      <a class="studio-link" href="privacy.html">Privacy</a>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <iframe
+      id="stage"
+      class="stage"
+      title="Fundt landing concept"
+      src="variants/taste-flow.html"
+    ></iframe>
+  </div>
+
+  <script src="switcher.js"></script>
 </body>
 </html>
