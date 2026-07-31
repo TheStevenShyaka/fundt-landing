@@ -1,21 +1,20 @@
 # Design
 
-<!-- Exploration set for the Fundt waitlist landing. Not a single shipped world. -->
+<!-- Month landing. Hero copy locked to "Where it went". -->
 
 ## Purpose
 
-Studio for comparing shortlisted concept landings: Flow / Buckets / Month from `design-taste-frontend`, and Donut / Market from `impeccable`. A sticky chrome lets reviewers switch skill source and style tab without leaving the page.
+Fundt waitlist **Month** concept (`taste-month`). Root `index.html` is the landing page (same content as `variants/taste-month.html`). Nav is Fundt + Privacy only — no studio chrome.
 
-## Controls
+## Hero (locked)
 
-- Skill dropdown: Taste vs Impeccable
-- Five style tabs per skill
-- Stage loads each concept in an iframe for CSS isolation
+- Headline: Know where your MoMo *went*.
+- Sub: Capture every transfer. Organize by category. Stay on budget without the homework.
 
 ## Shared product facts
 
-All variants must keep: Fundt name + mark, waitlist email capture, MoMo-first positioning, privacy claims that match PRODUCT.md, real provider icons, no fabricated social proof.
+Keep: Fundt name + mark, waitlist email capture, MoMo-first positioning, privacy claims that match PRODUCT.md, real provider icons, no fabricated social proof. No auto-sort claims. No em dash in product copy.
 
 ## Accent
 
-Product accent `#0090ff` may be kept, shifted, or temporarily replaced inside a concept when the concept world requires it. Document the choice in that variant's HTML comment contract.
+Product accent `#0090ff` on the Month History world. Document any palette change in the variant HTML comment contract.
