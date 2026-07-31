@@ -1,5 +1,5 @@
 /* =====================================================
-   Fundt landing page — light mode, brand accent #0090ff
+   Fundt landing page: light mode, brand accent #0090ff
    ===================================================== */
 
 :root {
@@ -8,7 +8,7 @@
   --accent-deep: #0074d4;
   --accent-soft: rgba(0, 144, 255, 0.08);
 
-  /* App dark surfaces — used for footer CTA + phone mockup */
+  /* App dark surfaces: used for footer CTA + phone mockup */
   --dark-page: #111116;
   --dark-surface: #212225;
   --dark-elevated: #2c2c2e;
