@@ -1,6 +1,6 @@
 # Fundt Landing Page
 
-Waitlist landing concepts for Fundt, with a studio chrome to compare design directions.
+Single Month landing concept for Fundt. Hero copy is locked (refine later).
 
 ## Run it locally
 
@@ -8,32 +8,27 @@ Waitlist landing concepts for Fundt, with a studio chrome to compare design dire
 npx serve .
 ```
 
-Open the root URL. Use:
+Open the root URL — it serves the Month landing directly (`index.html`, generated from the same defs as `variants/taste-month.html`). One nav: Fundt + Privacy.
 
-1. **Skill output** dropdown - switch between `design-taste-frontend` and `impeccable`
-2. **Style tabs** - the shortlisted concepts per skill
+**Hero (locked):** Know where your MoMo went.  
+**Sub:** Capture every transfer. Organize by category. Stay on budget without the homework.
 
-Deep links look like `#taste/taste-flow` or `#impeccable/imp-donut`.
+The Month page uses **Nunito 500/700** (the app's typeface) and the shared category color palette (`--cat-*` vars).
 
-All concepts use **Nunito 500/700** (the app's typeface) and share one category color palette (`--cat-*` vars at the top of each variant CSS).
+## Files
 
-## Concept map (shortlist)
+| Concept | File |
+| --- | --- |
+| Month (root) | `index.html` |
+| Month (variant copy) | `variants/taste-month.html` |
 
-| Skill | Tab | File | Idea |
-| --- | --- | --- | --- |
-| Taste | Flow | `variants/taste-flow.html` | One money stream forking into buckets (animated SVG) |
-| Taste | Buckets | `variants/taste-buckets.html` | The month as fat, rotated, colored pills |
-| Taste | Month | `variants/taste-month.html` | Calendar cells light up day by day |
-| Impeccable | Donut | `variants/imp-donut.html` | Half-phone History chart + category emoji legend |
-| Impeccable | Market | `variants/imp-market.html` | Full-bleed cobalt/mango/leaf color blocks, price-tag stickers |
-
-Rebuild variants after editing defs:
+Rebuild after editing defs:
 
 ```bash
 node scripts/build-variants.mjs
 ```
 
-Definitions live in `scripts/variant-defs.mjs` (taste) and `scripts/variant-defs-imp.mjs` (impeccable). Dropped concepts stay in those files but are filtered out by `KEEP` in `scripts/build-variants.mjs`.
+Definitions live in `scripts/variant-defs.mjs`. Older concept defs may remain in that file (and `scripts/variant-defs-imp.mjs`) but `KEEP` in `scripts/build-variants.mjs` only emits **taste-month** (plus root `index.html`).
 
 ## Collecting emails
 
@@ -47,10 +42,10 @@ Until then, emails store in `localStorage` under `fundt-waitlist`.
 
 ## Privacy Policy
 
-`privacy.html` is unchanged and still the app's policy URL target.
+`privacy.html` is unchanged and still the app's policy URL target. Linked from the Month page nav and footer.
 
 ## Product context
 
-- `PRODUCT.md` - durable product truth (Impeccable init)
-- `DESIGN.md` - notes that this folder is an exploration set
+- `PRODUCT.md` - durable product truth
+- `DESIGN.md` - Month landing, locked hero copy
 - Original landing archived at `variants/_legacy-current.html`
