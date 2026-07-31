@@ -1,41 +1,7 @@
 {
-  "skills": [
-    {
-      "id": "taste",
-      "label": "design-taste-frontend",
-      "styles": [
-        {
-          "id": "taste-flow",
-          "tab": "Flow",
-          "file": "taste-flow.html"
-        },
-        {
-          "id": "taste-buckets",
-          "tab": "Buckets",
-          "file": "taste-buckets.html"
-        },
-        {
-          "id": "taste-month",
-          "tab": "Month",
-          "file": "taste-month.html"
-        }
-      ]
-    },
-    {
-      "id": "impeccable",
-      "label": "impeccable",
-      "styles": [
-        {
-          "id": "imp-donut",
-          "tab": "Donut",
-          "file": "imp-donut.html"
-        },
-        {
-          "id": "imp-market",
-          "tab": "Market",
-          "file": "imp-market.html"
-        }
-      ]
-    }
-  ]
+  "concept": {
+    "id": "taste-month",
+    "label": "Month",
+    "file": "taste-month.html"
+  }
 }
