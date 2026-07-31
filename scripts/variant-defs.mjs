@@ -1,5 +1,5 @@
 /**
- * Taste set — five structurally different Fundt landings.
+ * Taste set: five structurally different Fundt landings.
  * All Nunito 500/700. Category palette lives in --cat-* vars for easy retuning.
  */
 
@@ -28,13 +28,13 @@ const waitlist = () => `
 export const defs = [
 
   // ============================================================
-  // 1. SORT — your SMS already knows. Raw messages become chips.
+  // 1. SORT: your SMS already knows. Raw messages become chips.
   // ============================================================
   {
     skill: "taste",
     id: "taste-sort",
     tab: "Sort",
-    title: "Fundt — Sort",
+    title: "Fundt · Sort",
     contract: `THESIS: The data already lives in your inbox; Fundt just sorts it. Refuse the generic phone-mockup hero.
 OWN-WORLD: Ink #0D0E12, paper text, six category colors as the only decoration. Nunito 500/700.
 STORY: Watch raw MoMo SMS get stamped into buckets; believe "zero homework"; join.
@@ -142,13 +142,13 @@ body{background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden}
   },
 
   // ============================================================
-  // 2. POSTER — scroll-snap typographic film. WHERE DID IT ALL GO?
+  // 2. POSTER: scroll-snap typographic film. WHERE DID IT ALL GO?
   // ============================================================
   {
     skill: "taste",
     id: "taste-poster",
     tab: "Poster",
-    title: "Fundt — Poster",
+    title: "Fundt · Poster",
     contract: `THESIS: The question everyone asks at month-end, staged as a five-frame poster film. Refuse the scrolling feature page entirely.
 OWN-WORLD: Full-bleed color frames, one giant Nunito word each, tiny footnotes. Snap scroll.
 STORY: WHERE / DID / IT / ALL / GO? → Fundt knows. → waitlist.
@@ -210,13 +210,13 @@ body{overflow:hidden}
   },
 
   // ============================================================
-  // 3. FLOW — one stream in, five buckets out. Light, airy, drawn.
+  // 3. FLOW: one stream in, five buckets out. Light, airy, drawn.
   // ============================================================
   {
     skill: "taste",
     id: "taste-flow",
     tab: "Flow",
-    title: "Fundt — Flow",
+    title: "Fundt · Flow",
     contract: `THESIS: Money is a stream; Fundt is the map of where it forks. Refuse card grids.
 OWN-WORLD: Gallery-white, one blue stream, animated SVG forks into category buckets. Nunito 500/700.
 STORY: See the fork diagram, understand instantly, join.
@@ -273,10 +273,10 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 <main id="top">
   <section class="hero">
     <h1>One stream in.<br /><em>Every franc</em> accounted for.</h1>
-    <p>Fundt turns your MoMo messages into a living map of the month. You do nothing. It sorts itself.</p>
+    <p>MoMo SMS captures MoMo activity outside Fundt, and confirms payments you started in the app. You categorize later. Then the month makes sense.</p>
   </section>
   <div class="flow" aria-label="Money flow diagram with sample amounts">
-    <div class="source"><span class="coin"><i></i>MoMo · your month</span></div>
+    <div class="source"><span class="coin"><i></i>MoMo · captured</span></div>
     <svg class="forks" viewBox="0 0 900 150" aria-hidden="true">
       <path d="M450 6 C450 70 90 60 90 142" stroke="#0090ff"/>
       <path d="M450 6 C450 76 270 66 270 142" stroke="#fbbf24"/>
@@ -291,13 +291,13 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       <div class="bucket b4"><span class="dot">👨‍👩‍👧</span><div class="name">Friends & Family</div><div class="val">R₣ 21,000</div></div>
       <div class="bucket b5"><span class="dot">🛒</span><div class="name">Groceries</div><div class="val">R₣ 9,800</div></div>
     </div>
-    <p class="sample">Sample month, for illustration.</p>
+    <p class="sample">Sample month, for illustration. · iOS auto-capture · Android coming</p>
   </div>
   <div class="center" id="waitlist">${waitlist()}</div>
   <section class="threes">
-    <div class="three"><h3>On your phone</h3><p>Messages are read and sorted on device. Nothing leaves without your say-so.</p></div>
-    <div class="three"><h3>Made for waves</h3><p>Steady salary or gig money in bursts — Fundt tracks the month you actually had.</p></div>
-    <div class="three"><h3>Zero homework</h3><p>No manual entry marathons. Open the app, see the picture, get on with your day.</p></div>
+    <div class="three"><h3>Capture & confirm</h3><p>SMS logs MoMo activity outside Fundt and confirms what you initiated in the app. It does not auto-pick a category.</p></div>
+    <div class="three"><h3>You categorize</h3><p>Captured MoMo activity lands as untracked until you put it in a bucket. Light lift, not a spreadsheet.</p></div>
+    <div class="three"><h3>On your phone</h3><p>SMS stays on device by default. Nothing is sold. Backup is optional if you want it.</p></div>
   </section>
   <div class="prov">
     <img src="../assets/electricity.png" alt="Electricity" />
@@ -312,13 +312,13 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
   },
 
   // ============================================================
-  // 4. BUCKETS — the month as a stack of fat colored pills.
+  // 4. BUCKETS: the month as a stack of fat colored pills.
   // ============================================================
   {
     skill: "taste",
     id: "taste-buckets",
     tab: "Buckets",
-    title: "Fundt — Buckets",
+    title: "Fundt · Buckets",
     contract: `THESIS: Budget categories as physical objects you can almost grab. Refuse thin fintech minimalism.
 OWN-WORLD: Warm paper #F3F4F6 (cool, not cream), fat rotated category pills, chunky Nunito bold.
 STORY: The pills ARE the product shot; grab one, want the app.
@@ -374,7 +374,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
 <main id="top">
   <section class="hero">
     <h1>Your money,<br />in buckets.</h1>
-    <p>Fundt sorts every MoMo spend into fat, obvious buckets. One glance and you know the month.</p>
+    <p>Capture MoMo activity. You pick the bucket. One glance and you know the month.</p>
   </section>
   <div class="stack" aria-label="Sample month by category">
     <div class="pill p1"><span>⚡ Electricity</span><small>R₣ 12,500</small></div>
@@ -384,17 +384,17 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     <div class="pill p5"><span>📱 Phone Bill</span><small>R₣ 6,500</small></div>
     <div class="pill p6"><span>Total · June</span><small>R₣ 56,100</small></div>
   </div>
-  <p class="stack-note">Sample month, for illustration.</p>
+  <p class="stack-note">Sample after you categorize. · iOS auto-capture · Android coming</p>
   <section class="mid" id="waitlist">
-    <h2>You didn't type any of that.</h2>
-    <p>It came from the MoMo messages already on your phone - parsed on device, never sold, deleted for good when you say so.</p>
+    <h2>SMS captures. You categorize.</h2>
+    <p>Outside MoMo activity gets logged as untracked. Payments you start in Fundt get confirmed from the SMS. Categories are always yours to assign, on your phone by default, never sold.</p>
     ${waitlist()}
   </section>
   <section class="strip">
     <div class="strip-in">
       <div><h3>Made for waves</h3><p>Income in bursts? The picture still holds. Fundt tracks your real month.</p></div>
-      <div><h3>Zero homework</h3><p>No entry marathons. Open, glance, done.</p></div>
-      <div><h3>Yours alone</h3><p>Processed on your phone. No fine print selling you out.</p></div>
+      <div><h3>Capture & confirm</h3><p>SMS is for logging outside MoMo activity and confirming in-app payments, not for auto-sorting categories.</p></div>
+      <div><h3>Yours alone</h3><p>Stays on your phone unless you turn on backup. No fine print selling you out.</p></div>
     </div>
   </section>
   <div class="prov">
@@ -410,20 +410,21 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
   },
 
   // ============================================================
-  // 5. MONTH — the calendar lights up, day by day.
+  // 5. MONTH: History hero + top-5 category trend (app DNA).
   // ============================================================
   {
     skill: "taste",
     id: "taste-month",
     tab: "Month",
-    title: "Fundt — Month",
-    contract: `THESIS: A month is 30 small days of spending; watch them light up and make sense. Refuse abstract hero art.
-OWN-WORLD: Deep night #101318 with glowing day-cells in category colors, Nunito 500/700.
-STORY: The calendar fills → "month-end, no mystery" → waitlist.
-FIRST VIEWPORT: Copy left, living calendar right.
+    title: "Fundt · Month",
+    contract: `THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
+OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
+STORY: See History total + top 5 → clear month → waitlist.
+FIRST VIEWPORT: Locked hero copy left, History hero + HistoryCategoryTrendChart right.
+HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.`,
     css: RESET + `
-:root{${CATS}--bg:#101318;--card:#191D24;--ink:#F2F4F7;--muted:rgba(242,244,247,.55);--line:rgba(242,244,247,.08);--accent:#0090ff}
+:root{${CATS}--bg:#101318;--page:#111116;--surface:#212225;--ink:#F2F4F7;--bright:#f0f0f5;--muted:rgba(242,244,247,.55);--soft:rgba(240,240,245,.45);--line:rgba(242,244,247,.08);--accent:#0090ff;--hatch:rgba(116,116,128,.14)}
 body{background:var(--bg);color:var(--ink);line-height:1.55}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;max-width:1140px;margin:0 auto}
 .brand{display:flex;gap:10px;align-items:center;font-weight:700;font-size:18px}
@@ -434,35 +435,105 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero h1 em{font-style:normal;color:var(--accent)}
 .hero-sub{margin-top:18px;color:var(--muted);font-size:1.08rem;max-width:38ch}
 .waitlist-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-.waitlist-input{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.waitlist-input{flex:1;min-width:200px;background:#191D24;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .waitlist-input:focus{outline:2px solid rgba(0,144,255,.45)}
 .btn{border:0;border-radius:14px;padding:14px 24px;font-weight:700;background:var(--accent);color:#fff;cursor:pointer}
 .btn:hover{filter:brightness(1.1)}
 .waitlist-note{margin-top:12px;font-size:13px;color:var(--muted)}
 .waitlist-note.success{color:#4ade80}.waitlist-note.error{color:#fb7185}
-.cal{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
-.cal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
-.cal-head .m{font-weight:700;font-size:1.1rem}
-.cal-head .t{font-size:13px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
-.day{aspect-ratio:1;border-radius:10px;background:rgba(242,244,247,.05);position:relative;animation:pop .5s cubic-bezier(.2,1.4,.4,1) both}
-.day.f{--c:var(--cat-bills)}
-.day.f::after{content:"";position:absolute;inset:0;border-radius:10px;background:var(--c);opacity:.92}
-.day.f2{--c:var(--cat-transport)}.day.f3{--c:var(--cat-airtime)}.day.f4{--c:var(--cat-people)}.day.f5{--c:var(--cat-food)}.day.f6{--c:var(--cat-data)}
-${Array.from({ length: 35 }, (_, i) => `.day:nth-child(${i + 1}){animation-delay:${(i * 0.045).toFixed(2)}s}`).join("")}
-@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
-.legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:16px;font-size:12.5px;color:var(--muted)}
-.legend .e{margin-right:4px}
-.cal-note{margin-top:10px;font-size:11.5px;color:var(--muted)}
-.claims{max-width:1140px;margin:80px auto 0;padding:0 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
-.claim{background:var(--bg);padding:40px 28px}
-.claim h3{font-size:1.15rem}
-.claim p{margin-top:8px;color:var(--muted);font-size:.95rem}
-.cta{max-width:1140px;margin:64px auto 0;padding:0 28px 72px;text-align:center}
+/* History tab surface: mirrors app/(tabs)/history.tsx heroBlock + HistoryCategoryTrendChart */
+.hist{background:var(--page);border:1px solid var(--line);border-radius:24px;padding:20px 0 16px;overflow:hidden;animation:histIn .7s cubic-bezier(.2,.9,.3,1) both}
+@keyframes histIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hist-chrome{padding:0 16px 12px;display:flex;justify-content:space-between;align-items:center}
+.hist-chrome .t{font-size:22px;font-weight:700;letter-spacing:-.02em;color:#fff;line-height:1.2}
+.hist-body{display:grid;gap:16px;padding:0 0 4px}
+.period{align-self:start;justify-self:start;width:fit-content;margin:0 16px;display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:0 14px;border:0;border-radius:22px;background:rgba(255,255,255,.08);color:#fff;font-weight:700;font-size:15px;line-height:20px;cursor:default}
+.period svg{width:16px;height:16px;opacity:.85;flex:none}
+.hist-amt{display:flex;align-items:baseline;gap:6px;padding:0 16px;animation:amtIn .55s .15s ease both}
+@keyframes amtIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hist-amt .n{font-size:36px;font-weight:700;line-height:44px;letter-spacing:-1.44px;color:var(--bright)}
+.hist-amt .c{font-size:22px;font-weight:500;line-height:44px;letter-spacing:-.88px;color:var(--soft)}
+/* Chart row: 200px bar stage (app CHART_HEIGHT) + category labels under columns */
+.trend{display:flex;align-items:flex-end;gap:8px;padding:0 16px}
+.col{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.col-bars{width:100%;height:200px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.badge{background:var(--surface);border-radius:999px;padding:4px 8px;max-width:100%;font-size:12px;font-weight:700;line-height:16px;color:var(--bright);text-align:center;white-space:nowrap;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both}
+.track{width:100%;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;height:0;animation:barGrow .52s cubic-bezier(.33,1,.68,1) both}
+.track-inner{width:100%;border-radius:16px;padding:4px;background-color:var(--surface);background-image:repeating-linear-gradient(135deg,var(--hatch) 0 8px,transparent 8px 20px);overflow:hidden;box-sizing:border-box}
+.emoji{width:100%;min-height:32px;border-radius:999px;background:var(--page);display:grid;place-items:center;font-size:20px;line-height:24px;padding:4px 0;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both}
+.cat-label{display:block;width:100%;min-height:16px;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both;font-size:10.5px;font-weight:700;line-height:13px;color:var(--bright);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* App timing: HERO_GAUGE_DELAY 220ms, stagger 90ms, reveal 520ms → labels after last bar (~1100ms) */
+.col:nth-child(1) .track{--h:168px;animation-delay:.22s}.col:nth-child(1) .track-inner{height:168px}.col:nth-child(1) .badge,.col:nth-child(1) .emoji,.col:nth-child(1) .cat-label{animation-delay:1.1s}
+.col:nth-child(2) .track{--h:100px;animation-delay:.31s}.col:nth-child(2) .track-inner{height:100px}.col:nth-child(2) .badge,.col:nth-child(2) .emoji,.col:nth-child(2) .cat-label{animation-delay:1.19s}
+.col:nth-child(3) .track{--h:78px;animation-delay:.4s}.col:nth-child(3) .track-inner{height:78px}.col:nth-child(3) .badge,.col:nth-child(3) .emoji,.col:nth-child(3) .cat-label{animation-delay:1.28s}
+.col:nth-child(4) .track{--h:50px;animation-delay:.49s}.col:nth-child(4) .track-inner{height:50px}.col:nth-child(4) .badge,.col:nth-child(4) .emoji,.col:nth-child(4) .cat-label{animation-delay:1.37s}
+.col:nth-child(5) .track{--h:44px;animation-delay:.58s}.col:nth-child(5) .track-inner{height:44px}.col:nth-child(5) .badge,.col:nth-child(5) .emoji,.col:nth-child(5) .cat-label{animation-delay:1.46s}
+@keyframes barGrow{from{height:0}to{height:var(--h)}}
+@keyframes labelIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hist-note{margin:14px 16px 0;font-size:11.5px;color:var(--muted);line-height:1.4}
+/* Claim cards: copy above mini app UI */
+.claims{max-width:1140px;margin:48px auto 0;padding:0 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.claim{background:var(--bg);padding:22px 20px 24px;display:flex;flex-direction:column;gap:0;min-height:100%}
+.claim-viz{background:var(--page);border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:12px;min-height:104px;display:flex;flex-direction:column;justify-content:center;gap:8px;overflow:hidden}
+.claim h3{font-size:1.1rem}
+.claim p{margin-top:6px;color:var(--muted);font-size:.92rem;line-height:1.45}
+/* Card 1: SMS → Untracked / Categorize (CapturePromiseVisual + UntrackedExpenseRow) */
+.viz-sms{background:var(--surface);border-radius:14px;padding:10px 12px;opacity:.78;transform:rotate(-1.5deg);transform-origin:left center}
+.viz-sms-hd{display:flex;align-items:center;gap:5px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);line-height:14px}
+.viz-sms-hd svg{width:12px;height:12px;opacity:.8;flex:none}
+.viz-sms-bd{margin-top:4px;font-size:11.5px;line-height:15px;color:rgba(242,244,247,.78);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.viz-urow{display:flex;align-items:center;gap:8px;padding:4px 2px 0}
+.viz-uicon{width:28px;height:28px;border-radius:9px;background:rgba(255,255,255,.08);display:grid;place-items:center;flex:none}
+.viz-uicon svg{width:14px;height:14px;color:var(--bright)}
+.viz-umid{flex:1;min-width:0}
+.viz-uamt{display:block;font-size:13px;font-weight:700;line-height:18px;color:var(--bright)}
+.viz-uchip{display:inline-flex;align-items:center;margin-top:2px;font-size:10px;font-weight:700;line-height:14px;padding:2px 8px;border-radius:999px;background:rgba(255,159,10,.16);color:#FF9F0A;animation:chipPulse 2.4s ease-in-out infinite}
+@keyframes chipPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,159,10,0)}50%{opacity:.92;box-shadow:0 0 0 4px rgba(255,159,10,.12)}}
+.viz-ucta{font-size:12px;font-weight:700;color:var(--accent);flex:none;white-space:nowrap}
+/* Card 2: Unresolved pending → confirmed (HistoryRevampRow) */
+.viz-pending,.viz-confirmed{display:flex;align-items:center;gap:8px;min-height:44px}
+.viz-em{position:relative;width:32px;height:32px;display:grid;place-items:center;font-size:18px;line-height:1;flex:none}
+.viz-dot{position:absolute;top:2px;right:2px;width:7px;height:7px;border-radius:50%;background:#FF9F0A;animation:dotPulse 1.8s ease-in-out infinite}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.15);opacity:.75}}
+.viz-check{position:absolute;top:-1px;right:-1px;width:14px;height:14px;border-radius:50%;background:var(--accent);display:grid;place-items:center;opacity:0;animation:checkIn .4s .9s cubic-bezier(.33,1,.68,1) both}
+.viz-check svg{width:9px;height:9px;color:#fff}
+@keyframes checkIn{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+.viz-rmid{flex:1;min-width:0}
+.viz-rtitle{display:block;font-size:13px;font-weight:700;line-height:18px;color:var(--bright)}
+.viz-rsub{display:block;margin-top:1px;font-size:11px;line-height:15px;color:var(--muted)}
+.viz-rcta{font-size:11.5px;font-weight:500;color:var(--accent);flex:none;white-space:nowrap}
+.viz-ramt{font-size:12px;font-weight:700;color:var(--bright);flex:none}
+.viz-confirmed{opacity:0;animation:confirmRow .45s .75s cubic-bezier(.33,1,.68,1) both}
+@keyframes confirmRow{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.viz-pending{opacity:.55}
+.claim:nth-child(2) .claim-viz{gap:6px}
+/* Card 3: Budget limit + reminder chip (BudgetPromiseVisual / budgetAlertLabel) */
+.viz-bhd{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.viz-bpill{display:inline-flex;align-items:center;gap:5px;padding:3px 9px 3px 6px;border-radius:999px;background:rgba(255,255,255,.08)}
+.viz-bpill .e{font-size:13px;line-height:16px}
+.viz-bpill .n{font-size:11px;font-weight:700;line-height:15px;color:var(--bright)}
+.viz-bpct{font-size:13px;font-weight:700;color:var(--bright);font-variant-numeric:tabular-nums}
+.viz-btrack{height:8px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:2px}
+.viz-bfill{height:100%;width:0;border-radius:999px;background:#fbbf24;animation:barFill .9s .25s cubic-bezier(.33,1,.68,1) both}
+@keyframes barFill{from{width:0}to{width:86%}}
+.viz-bchip{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;margin-top:2px;padding:6px 10px;border-radius:999px;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.28);font-size:11.5px;font-weight:700;line-height:14px;color:#fbbf24;opacity:0;animation:chipIn .4s .85s cubic-bezier(.33,1,.68,1) both}
+.viz-bchip svg{width:13px;height:13px;flex:none}
+@keyframes chipIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.cta{max-width:1140px;margin:48px auto 0;padding:0 28px 56px;text-align:center}
 .cta h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 .cta .waitlist-form{justify-content:center}
 .foot{max-width:1140px;margin:0 auto;padding:22px 28px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.claims{grid-template-columns:1fr}}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;min-height:auto}
+.claims{grid-template-columns:1fr}
+.hist-amt .n{font-size:32px}
+.col-bars{height:180px}
+.col:nth-child(1) .track{--h:148px}.col:nth-child(1) .track-inner{height:148px}
+.col:nth-child(2) .track{--h:88px}.col:nth-child(2) .track-inner{height:88px}
+.col:nth-child(3) .track{--h:69px}.col:nth-child(3) .track-inner{height:69px}
+.col:nth-child(4) .track{--h:44px}.col:nth-child(4) .track-inner{height:44px}
+.col:nth-child(5) .track{--h:44px}.col:nth-child(5) .track-inner{height:44px}
+}
 `,
     body: `
 <header class="nav">
@@ -472,34 +543,85 @@ ${Array.from({ length: 35 }, (_, i) => `.day:nth-child(${i + 1}){animation-delay
 <main id="top">
   <section class="hero">
     <div>
-      <h1>Thirty days.<br />Zero <em>mysteries</em>.</h1>
-      <p class="hero-sub">Every day your MoMo moves, Fundt fills in the picture. By month-end you already know the answer.</p>
+      <h1>Know where your MoMo <em>went</em>.</h1>
+      <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
       <div id="waitlist">${waitlist()}</div>
     </div>
-    <div class="cal" aria-label="A sample month filling with categorized spending">
-      <div class="cal-head"><span class="m">June</span><span class="t">56,100 RWF so far</span></div>
-      <div class="grid">
-        <div class="day f"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day"></div><div class="day f f4"></div><div class="day f f5"></div>
-        <div class="day"></div><div class="day f f2"></div><div class="day f"></div><div class="day"></div><div class="day f f6"></div><div class="day f f5"></div><div class="day"></div>
-        <div class="day f f4"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day f"></div><div class="day"></div><div class="day f f5"></div>
-        <div class="day"></div><div class="day f f6"></div><div class="day f f2"></div><div class="day"></div><div class="day f f4"></div><div class="day f"></div><div class="day"></div>
-        <div class="day f f5"></div><div class="day f f2"></div><div class="day"></div><div class="day f f3"></div><div class="day"></div><div class="day f"></div><div class="day f f4"></div>
+    <div class="hist" aria-label="History: month total and top category charts">
+      <div class="hist-chrome"><span class="t">History</span></div>
+      <div class="hist-body">
+        <span class="period">This month<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4.2 6.2a.75.75 0 0 1 1.06 0L8 8.94l2.74-2.74a.75.75 0 1 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L4.2 7.26a.75.75 0 0 1 0-1.06z"/></svg></span>
+        <div class="hist-amt"><span class="n">56,100</span><span class="c">R₣</span></div>
+        <div class="trend" role="img" aria-label="Top five category spend this month: Friends and Family, Electricity, Groceries, Transport, Phone Bill">
+          <div class="col">
+            <div class="col-bars"><span class="badge">21k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">👨‍👩‍👧</span></div></div></div>
+            <span class="cat-label">Friends</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">12.5k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">⚡</span></div></div></div>
+            <span class="cat-label">Electricity</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">9.8k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🛒</span></div></div></div>
+            <span class="cat-label">Groceries</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">6.3k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🚌</span></div></div></div>
+            <span class="cat-label">Transport</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">4.2k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">📱</span></div></div></div>
+            <span class="cat-label">Phone</span>
+          </div>
+        </div>
       </div>
-      <div class="legend">
-        <span><span class="e">⚡</span>Electricity</span>
-        <span><span class="e">🚌</span>Transport</span>
-        <span><span class="e">📱</span>Phone Bill</span>
-        <span><span class="e">👨‍👩‍👧</span>Friends & Family</span>
-        <span><span class="e">🛒</span>Groceries</span>
-        <span><span class="e">🍽️</span>Restaurants</span>
-      </div>
-      <p class="cal-note">Sample month, for illustration.</p>
+      <p class="hist-note">Your top spending in August</p>
     </div>
   </section>
   <section class="claims">
-    <div class="claim"><h3>It sorts itself</h3><p>Airtime, bills, transfers, the midnight buy - each lands in its bucket, automatically.</p></div>
-    <div class="claim"><h3>On your phone</h3><p>Messages are parsed on device. Nothing leaves without your say-so. Nothing is sold.</p></div>
-    <div class="claim"><h3>Waves welcome</h3><p>Steady salary or gig bursts - Fundt tracks the month you actually had.</p></div>
+    <div class="claim">
+      <h3>Capture, don't auto-sort</h3>
+      <p>MoMo SMS logs the payment. It does not pick Transport or Groceries for you. You categorize untracked items.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-sms">
+          <div class="viz-sms-hd"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2.5 3.5A1.5 1.5 0 0 1 4 2h8a1.5 1.5 0 0 1 1.5 1.5v6A1.5 1.5 0 0 1 12 11H8.2L5.1 13.4a.5.5 0 0 1-.8-.4V11H4A1.5 1.5 0 0 1 2.5 9.5v-6z"/></svg>M-Money</div>
+          <div class="viz-sms-bd">*165*S*5,000 R₣ transferred to Aline M (0788…) at 19:21. Fee was 100 R₣.</div>
+        </div>
+        <div class="viz-urow">
+          <span class="viz-uicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span>
+          <div class="viz-umid"><span class="viz-uamt">5,000 R₣</span><span class="viz-uchip">Untracked</span></div>
+          <span class="viz-ucta">Categorize</span>
+        </div>
+      </div>
+    </div>
+    <div class="claim">
+      <h3>Confirm in-app payments</h3>
+      <p>When you start a transfer in Fundt, the MoMo SMS confirms it completed. Outside MoMo activity gets captured the same way.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-pending">
+          <span class="viz-em">💸<span class="viz-dot"></span></span>
+          <div class="viz-rmid"><span class="viz-rtitle">12,000 R₣</span><span class="viz-rsub">Waiting for MoMo SMS</span></div>
+          <span class="viz-rcta">Resolve now</span>
+        </div>
+        <div class="viz-confirmed">
+          <span class="viz-em">🍽️<span class="viz-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 6.2 5 8.5 9.5 3.5"/></svg></span></span>
+          <div class="viz-rmid"><span class="viz-rtitle">Restaurants</span><span class="viz-rsub">Confirmed from MoMo SMS</span></div>
+          <span class="viz-ramt">12,000</span>
+        </div>
+      </div>
+    </div>
+    <div class="claim">
+      <h3>Budgets that remind you</h3>
+      <p>Set a monthly limit per category. Fundt nudges you at 70%, almost full, and over, so you catch it mid-month, not at month-end.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-bhd">
+          <span class="viz-bpill"><span class="e">🍽️</span><span class="n">Restaurants</span></span>
+          <span class="viz-bpct">86%</span>
+        </div>
+        <div class="viz-btrack"><div class="viz-bfill"></div></div>
+        <span class="viz-bchip"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5a4 4 0 0 0-4 4v2.2c0 .4-.16.78-.44 1.06L2.7 9.62A.75.75 0 0 0 3.25 11h9.5a.75.75 0 0 0 .55-1.38l-.86-.86A1.5 1.5 0 0 1 12 7.7V5.5a4 4 0 0 0-4-4zm0 13a1.75 1.75 0 0 0 1.62-1.1H6.38A1.75 1.75 0 0 0 8 14.5z"/></svg>Nearing your limit</span>
+      </div>
+    </div>
   </section>
   <section class="cta">
     <h2>Be first when it ships.</h2>
