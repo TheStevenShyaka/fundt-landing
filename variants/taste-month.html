@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fundt — Month</title>
-  <meta name="description" content="Fundt shows you where your MoMo spending went, without turning budgeting into homework." />
+  <title>Fundt · Month</title>
+  <meta name="description" content="Know where your MoMo went. Capture, organize, and budget with Fundt." />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="taste-month.css" />
 </head>
 <body class="variant-taste-month">
 <!--
-THESIS: A month is 30 small days of spending; watch them light up and make sense. Refuse abstract hero art.
-OWN-WORLD: Deep night #101318 with glowing day-cells in category colors, Nunito 500/700.
-STORY: The calendar fills → "month-end, no mystery" → waitlist.
-FIRST VIEWPORT: Copy left, living calendar right.
+THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
+OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
+STORY: See History total + top 5 → clear month → waitlist.
+FIRST VIEWPORT: Locked hero copy left, History hero + HistoryCategoryTrendChart right.
+HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.
 -->
 
@@ -25,8 +26,8 @@ FORM: Taste / Month. V7 M7 D3.
 <main id="top">
   <section class="hero">
     <div>
-      <h1>Thirty days.<br />Zero <em>mysteries</em>.</h1>
-      <p class="hero-sub">Every day your MoMo moves, Fundt fills in the picture. By month-end you already know the answer.</p>
+      <h1>Know where your MoMo <em>went</em>.</h1>
+      <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
       <div id="waitlist">
   <form class="waitlist-form" novalidate>
     <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
@@ -34,30 +35,81 @@ FORM: Taste / Month. V7 M7 D3.
   </form>
   <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p></div>
     </div>
-    <div class="cal" aria-label="A sample month filling with categorized spending">
-      <div class="cal-head"><span class="m">June</span><span class="t">56,100 RWF so far</span></div>
-      <div class="grid">
-        <div class="day f"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day"></div><div class="day f f4"></div><div class="day f f5"></div>
-        <div class="day"></div><div class="day f f2"></div><div class="day f"></div><div class="day"></div><div class="day f f6"></div><div class="day f f5"></div><div class="day"></div>
-        <div class="day f f4"></div><div class="day"></div><div class="day f f2"></div><div class="day f f3"></div><div class="day f"></div><div class="day"></div><div class="day f f5"></div>
-        <div class="day"></div><div class="day f f6"></div><div class="day f f2"></div><div class="day"></div><div class="day f f4"></div><div class="day f"></div><div class="day"></div>
-        <div class="day f f5"></div><div class="day f f2"></div><div class="day"></div><div class="day f f3"></div><div class="day"></div><div class="day f"></div><div class="day f f4"></div>
+    <div class="hist" aria-label="History: month total and top category charts">
+      <div class="hist-chrome"><span class="t">History</span></div>
+      <div class="hist-body">
+        <span class="period">This month<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4.2 6.2a.75.75 0 0 1 1.06 0L8 8.94l2.74-2.74a.75.75 0 1 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L4.2 7.26a.75.75 0 0 1 0-1.06z"/></svg></span>
+        <div class="hist-amt"><span class="n">56,100</span><span class="c">R₣</span></div>
+        <div class="trend" role="img" aria-label="Top five category spend this month: Friends and Family, Electricity, Groceries, Transport, Phone Bill">
+          <div class="col">
+            <div class="col-bars"><span class="badge">21k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">👨‍👩‍👧</span></div></div></div>
+            <span class="cat-label">Friends</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">12.5k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">⚡</span></div></div></div>
+            <span class="cat-label">Electricity</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">9.8k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🛒</span></div></div></div>
+            <span class="cat-label">Groceries</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">6.3k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🚌</span></div></div></div>
+            <span class="cat-label">Transport</span>
+          </div>
+          <div class="col">
+            <div class="col-bars"><span class="badge">4.2k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">📱</span></div></div></div>
+            <span class="cat-label">Phone</span>
+          </div>
+        </div>
       </div>
-      <div class="legend">
-        <span><span class="e">⚡</span>Electricity</span>
-        <span><span class="e">🚌</span>Transport</span>
-        <span><span class="e">📱</span>Phone Bill</span>
-        <span><span class="e">👨‍👩‍👧</span>Friends & Family</span>
-        <span><span class="e">🛒</span>Groceries</span>
-        <span><span class="e">🍽️</span>Restaurants</span>
-      </div>
-      <p class="cal-note">Sample month, for illustration.</p>
+      <p class="hist-note">Your top spending in August</p>
     </div>
   </section>
   <section class="claims">
-    <div class="claim"><h3>It sorts itself</h3><p>Airtime, bills, transfers, the midnight buy - each lands in its bucket, automatically.</p></div>
-    <div class="claim"><h3>On your phone</h3><p>Messages are parsed on device. Nothing leaves without your say-so. Nothing is sold.</p></div>
-    <div class="claim"><h3>Waves welcome</h3><p>Steady salary or gig bursts - Fundt tracks the month you actually had.</p></div>
+    <div class="claim">
+      <h3>Capture, don't auto-sort</h3>
+      <p>MoMo SMS logs the payment. It does not pick Transport or Groceries for you. You categorize untracked items.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-sms">
+          <div class="viz-sms-hd"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2.5 3.5A1.5 1.5 0 0 1 4 2h8a1.5 1.5 0 0 1 1.5 1.5v6A1.5 1.5 0 0 1 12 11H8.2L5.1 13.4a.5.5 0 0 1-.8-.4V11H4A1.5 1.5 0 0 1 2.5 9.5v-6z"/></svg>M-Money</div>
+          <div class="viz-sms-bd">*165*S*5,000 R₣ transferred to Aline M (0788…) at 19:21. Fee was 100 R₣.</div>
+        </div>
+        <div class="viz-urow">
+          <span class="viz-uicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span>
+          <div class="viz-umid"><span class="viz-uamt">5,000 R₣</span><span class="viz-uchip">Untracked</span></div>
+          <span class="viz-ucta">Categorize</span>
+        </div>
+      </div>
+    </div>
+    <div class="claim">
+      <h3>Confirm in-app payments</h3>
+      <p>When you start a transfer in Fundt, the MoMo SMS confirms it completed. Outside MoMo activity gets captured the same way.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-pending">
+          <span class="viz-em">💸<span class="viz-dot"></span></span>
+          <div class="viz-rmid"><span class="viz-rtitle">12,000 R₣</span><span class="viz-rsub">Waiting for MoMo SMS</span></div>
+          <span class="viz-rcta">Resolve now</span>
+        </div>
+        <div class="viz-confirmed">
+          <span class="viz-em">🍽️<span class="viz-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 6.2 5 8.5 9.5 3.5"/></svg></span></span>
+          <div class="viz-rmid"><span class="viz-rtitle">Restaurants</span><span class="viz-rsub">Confirmed from MoMo SMS</span></div>
+          <span class="viz-ramt">12,000</span>
+        </div>
+      </div>
+    </div>
+    <div class="claim">
+      <h3>Budgets that remind you</h3>
+      <p>Set a monthly limit per category. Fundt nudges you at 70%, almost full, and over, so you catch it mid-month, not at month-end.</p>
+      <div class="claim-viz" aria-hidden="true">
+        <div class="viz-bhd">
+          <span class="viz-bpill"><span class="e">🍽️</span><span class="n">Restaurants</span></span>
+          <span class="viz-bpct">86%</span>
+        </div>
+        <div class="viz-btrack"><div class="viz-bfill"></div></div>
+        <span class="viz-bchip"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5a4 4 0 0 0-4 4v2.2c0 .4-.16.78-.44 1.06L2.7 9.62A.75.75 0 0 0 3.25 11h9.5a.75.75 0 0 0 .55-1.38l-.86-.86A1.5 1.5 0 0 1 12 7.7V5.5a4 4 0 0 0-4-4zm0 13a1.75 1.75 0 0 0 1.62-1.1H6.38A1.75 1.75 0 0 0 8 14.5z"/></svg>Nearing your limit</span>
+      </div>
+    </div>
   </section>
   <section class="cta">
     <h2>Be first when it ships.</h2>
