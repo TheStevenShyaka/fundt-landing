@@ -1,5 +1,5 @@
 /*
- * Fundt landing — waitlist signup + small niceties.
+ * Fundt landing: waitlist signup + small niceties.
  *
  * Wire up email collection below: set WAITLIST_ENDPOINT to your
  * Formspree / Google Form / backend URL. Until then, emails are
