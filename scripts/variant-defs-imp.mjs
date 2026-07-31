@@ -1,5 +1,5 @@
 /**
- * Impeccable set — five committed worlds for the Fundt landing.
+ * Impeccable set: five committed worlds for the Fundt landing.
  * Nunito 500/700 throughout. Category palette in --cat-* vars.
  */
 
@@ -28,13 +28,13 @@ const waitlist = () => `
 export const defs = [
 
   // ============================================================
-  // 1. APPLINE — the landing IS the app, in app tokens.
+  // 1. APPLINE: the landing IS the app, in app tokens.
   // ============================================================
   {
     skill: "impeccable",
     id: "imp-appline",
     tab: "Appline",
-    title: "Fundt — Appline",
+    title: "Fundt · Appline",
     contract: `THESIS: Don't describe the app - hand it over. The landing is the home screen, in real app tokens. Refuse marketing chrome.
 OWN-WORLD: FundtTokens exactly: #111116 page, #212225 surface, #0090ff accent, Nunito.
 STORY: You are already inside the app; the copy floats at the edges; join to keep it.
@@ -106,7 +106,7 @@ body{background:var(--page);color:var(--title);line-height:1.5}
   <section class="hero">
     <div>
       <h1>This is Fundt.<br />It already <em>did the work</em>.</h1>
-      <p class="hero-sub">The home screen you're looking at built itself from MoMo sends. Every franc in one place - without a notebook, without spreadsheet energy.</p>
+      <p class="hero-sub">The home screen you're looking at built itself from MoMo activity. Every franc in one place - without a notebook, without spreadsheet energy.</p>
       <div id="waitlist">${waitlist()}</div>
     </div>
     <div>
@@ -155,13 +155,13 @@ body{background:var(--page);color:var(--title);line-height:1.5}
   },
 
   // ============================================================
-  // 2. CHAT — the whole page is an SMS thread Fundt tidies up.
+  // 2. CHAT: the whole page is an SMS thread Fundt tidies up.
   // ============================================================
   {
     skill: "impeccable",
     id: "imp-chat",
     tab: "Chat",
-    title: "Fundt — Chat",
+    title: "Fundt · Chat",
     contract: `THESIS: The sell happens where the money already talks: the SMS thread. Refuse sections entirely.
 OWN-WORLD: Messaging UI - incoming gray MoMo bubbles, Fundt's blue sorted replies, composer = waitlist.
 STORY: Scroll a conversation; Fundt answers every noisy SMS with clarity; the composer asks for your email.
@@ -248,18 +248,18 @@ body{background:var(--bg);color:var(--ink);line-height:1.45}
   },
 
   // ============================================================
-  // 3. DONUT — six-month average chart locked in a half-phone.
+  // 3. AVERAGE: six-month average chart locked in a half-phone.
   // ============================================================
   {
     skill: "impeccable",
     id: "imp-donut",
-    tab: "Donut",
-    title: "Fundt — Donut",
-    contract: `THESIS: One chart answers the month's question - lead with the real six-month average spend from History. Refuse decorative heroes.
+    tab: "Average",
+    title: "Fundt · Average",
+    contract: `THESIS: One chart answers the month's question - lead with the real six-month average spend from category detail. Refuse decorative heroes.
 OWN-WORLD: Paper white page; Fundt half-phone (#111116) with CategorySixMonthChart; category legend as typographic list with app emojis. Nunito.
 STORY: See the answer first, learn the mechanism second, join third.
 FIRST VIEWPORT: Half-phone six-month chart + category legend + waitlist.
-FORM: Impeccable / Donut. Persuade.`,
+FORM: Impeccable / Average. Persuade.`,
     css: RESET + `
 :root{${CATS}--bg:#FDFDFE;--ink:#12161C;--muted:#68727F;--line:rgba(18,22,28,.09);--accent:#0090ff;--page:#111116;--surface:#212225;--title:#edeef0;--soft:rgba(240,240,245,.45);--body:rgba(240,240,245,.72);--below:#3D9B6A;--above:#8b8d98;--link:#70b8ff}
 body{background:var(--bg);color:var(--ink);line-height:1.5}
@@ -342,13 +342,13 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
 <main id="top">
   <section class="hero">
     <div>
-      <div class="phone-stage" aria-label="Sample Fundt History six-month average spending chart">
+      <div class="phone-stage" aria-label="Sample Fundt six-month average spending chart for a category">
         <div class="app">
           <div class="screen">
             <div class="status"><span>9:41</span><span>●●●</span></div>
             <div class="hist-head">
-              <div class="t">History</div>
-              <span class="pill">Feb — Jul</span>
+              <div class="t">Groceries</div>
+              <span class="pill">Feb to Jul</span>
             </div>
             <div class="six">
               <div class="eyebrow">AVERAGE SPENDING</div>
@@ -374,7 +374,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
           </div>
         </div>
       </div>
-      <p class="mock-note">Sample data · six-month average from History</p>
+      <p class="mock-note">Sample · six-month average on a category · iOS auto-capture · Android coming</p>
     </div>
     <div class="hero-copy">
       <h1>Where did it go?<br />Answered.</h1>
@@ -389,15 +389,15 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     </div>
   </section>
   <section class="how">
-    <h2>You never feed it a number.</h2>
+    <h2>SMS captures. You categorize.</h2>
     <div class="how-rows">
-      <div class="how-row"><span class="n">1</span><h3>Your MoMo texts arrive</h3><p>Every spend already leaves an SMS receipt on your phone. That's the data.</p></div>
-      <div class="how-row"><span class="n">2</span><h3>Fundt reads them on device</h3><p>Parsing happens on your phone. Nothing leaves without your say-so, nothing is sold, deletion is real.</p></div>
-      <div class="how-row"><span class="n">3</span><h3>The chart draws itself</h3><p>Categories, totals, month view - ready when you open the app. Waves of income welcome.</p></div>
+      <div class="how-row"><span class="n">1</span><h3>From Fundt or outside</h3><p>Dial *182* from the app, or use MoMo as usual. The confirmation SMS is the receipt.</p></div>
+      <div class="how-row"><span class="n">2</span><h3>Capture & confirm</h3><p>Optional iOS capture logs outside MoMo activity and confirms in-app payments. Nothing is auto-sorted into a category. Android capture is coming.</p></div>
+      <div class="how-row"><span class="n">3</span><h3>You categorize later</h3><p>Untracked MoMo activity waits for you. Once you assign buckets, categories, budgets, and charts like average spending, the month becomes clear.</p></div>
     </div>
   </section>
   <div class="prov">
-    <span>Understands</span>
+    <span>Bills you already pay on MoMo</span>
     <img src="../assets/electricity.png" alt="Electricity" />
     <img src="../assets/wasac.png" alt="WASAC" />
     <img src="../assets/canal-plus.png" alt="Canal+" />
@@ -407,7 +407,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
   </div>
   <section class="cta">
     <div class="in">
-      <h2>Your donut is waiting.</h2>
+      <h2>Your month is waiting.</h2>
       <p>Join the waitlist and be first when Fundt ships.</p>
       ${waitlist()}
     </div>
@@ -417,13 +417,13 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
   },
 
   // ============================================================
-  // 4. ZERO — the entire pitch in one viewport. Nothing scrolls.
+  // 4. ZERO: the entire pitch in one viewport. Nothing scrolls.
   // ============================================================
   {
     skill: "impeccable",
     id: "imp-zero",
     tab: "Zero",
-    title: "Fundt — Zero",
+    title: "Fundt · Zero",
     contract: `THESIS: If the offer is truly simple, one screen should sell it. Refuse the scroll.
 OWN-WORLD: Single 100dvh composition, ink on white, one blue action. Nunito 700 display.
 STORY: Read one sentence, believe three chips, act. Ten seconds total.
@@ -498,17 +498,17 @@ body{background:var(--bg);color:var(--ink);overflow:hidden}
   },
 
   // ============================================================
-  // 5. MARKET — full-bleed color blocks, Kigali-market energy.
+  // 5. MARKET: full-bleed color blocks, Kigali-market energy.
   // ============================================================
   {
     skill: "impeccable",
     id: "imp-market",
     tab: "Market",
-    title: "Fundt — Market",
+    title: "Fundt · Market",
     contract: `THESIS: Money in Rwanda is loud, colorful, alive - the landing should be too. Refuse fintech gray.
-OWN-WORLD: Full-bleed saturated blocks (cobalt, mango, leaf, ink), price-tag stickers, marquee. Nunito 700 at poster scale.
+OWN-WORLD: Full-bleed saturated blocks (cobalt, mango, leaf, ink), marquee. Nunito 700 at poster scale.
 STORY: Joy first, mechanism second, trust third, action last.
-FIRST VIEWPORT: Cobalt block with giant claim + sticker.
+FIRST VIEWPORT: Cobalt block with giant claim + waitlist.
 FORM: Impeccable / Market. Persuade.`,
     css: RESET + `
 :root{${CATS}--cobalt:#0057D8;--mango:#FFB800;--leaf:#00A860;--ink:#12141A;--paper:#FFF9F0}
@@ -526,10 +526,6 @@ body{background:var(--ink);color:#fff;line-height:1.45}
 .hero-block{min-height:100dvh;display:grid;align-items:center;padding-top:110px}
 .hero-block h1{font-size:clamp(3rem,9vw,7rem);line-height:.98;letter-spacing:-.03em;max-width:11ch}
 .hero-block .sub{margin-top:22px;font-size:clamp(1.05rem,2vw,1.3rem);opacity:.85;max-width:38ch}
-.sticker{position:absolute;right:6%;top:22%;background:#fff;color:var(--ink);border-radius:16px;padding:16px 20px;transform:rotate(6deg);box-shadow:0 18px 44px rgba(0,0,0,.28);font-weight:700}
-.sticker .s1{font-size:12px;opacity:.6}
-.sticker .s2{font-size:1.3rem}
-.sticker::before{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;border-radius:50%;background:var(--mango);transform:translateX(-50%)}
 .waitlist-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
 .waitlist-input{flex:1;min-width:220px;border:0;border-radius:14px;padding:16px 18px;font-size:15px;background:rgba(255,255,255,.94);color:var(--ink)}
 .waitlist-input:focus{outline:3px solid rgba(255,184,0,.7)}
@@ -556,7 +552,7 @@ body{background:var(--ink);color:#fff;line-height:1.45}
 .b-ink img.mark{width:64px;height:64px;border-radius:16px;margin-bottom:18px}
 .b-ink .waitlist-form{justify-content:center}
 .foot{background:var(--ink);padding:20px 28px;display:flex;justify-content:space-between;max-width:1060px;margin:0 auto;font-size:13px;opacity:.6}
-@media(max-width:820px){.sticker{display:none}.b-mango .grid,.trust{grid-template-columns:1fr}}
+@media(max-width:820px){.b-mango .grid,.trust{grid-template-columns:1fr}}
 `,
     body: `
 <main id="top">
@@ -567,7 +563,7 @@ body{background:var(--ink);color:#fff;line-height:1.45}
     </nav>
     <div class="block-in">
       <h1>Every franc, accounted for.</h1>
-      <p class="sub">Fundt reads your MoMo messages and sorts the whole month - bills, rides, airtime, people - while you live your life.</p>
+      <p class="sub">Fundt reads MoMo SMS to capture MoMo activity outside the app and confirm payments you start in Fundt. You categorize later: bills, rides, phone, people, while you live your life.</p>
       <div id="waitlist">
         <form class="waitlist-form" novalidate>
           <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
@@ -576,7 +572,6 @@ body{background:var(--ink);color:#fff;line-height:1.45}
         <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
       </div>
     </div>
-    <div class="sticker" aria-hidden="true"><div class="s1">June · sample</div><div class="s2">56,100 RWF</div></div>
   </section>
   <div class="marquee" aria-hidden="true">
     <div class="mq">
@@ -586,25 +581,25 @@ body{background:var(--ink);color:#fff;line-height:1.45}
   </div>
   <section class="block b-mango">
     <div class="block-in">
-      <h2>The bills you actually pay.</h2>
+      <h2>The bills you already pay on MoMo.</h2>
       <div class="grid">
-        <div class="tagcard"><img src="../assets/electricity.png" alt="" /><div class="t">Electricity</div><div class="d">Cash power, logged the second the SMS lands.</div></div>
-        <div class="tagcard"><img src="../assets/wasac.png" alt="" /><div class="t">WASAC</div><div class="d">Water bill in, water bill sorted.</div></div>
-        <div class="tagcard"><img src="../assets/tap-and-go.png" alt="" /><div class="t">Tap&Go</div><div class="d">Every fare counted, even the 300 RWF ones.</div></div>
-        <div class="tagcard"><img src="../assets/canal-plus.png" alt="" /><div class="t">Canal+</div><div class="d">Subscriptions stop hiding.</div></div>
-        <div class="tagcard"><img src="../assets/phone-bill.png" alt="" /><div class="t">Airtime & bundles</div><div class="d">The small spends that eat the month.</div></div>
-        <div class="tagcard"><img src="../assets/rra.png" alt="" /><div class="t">RRA & more</div><div class="d">If MoMo paid it, Fundt saw it.</div></div>
+        <div class="tagcard"><img src="../assets/electricity.png" alt="" /><div class="t">Electricity</div><div class="d">Cash power paid on MoMo can be captured. You put it in a category when you're ready.</div></div>
+        <div class="tagcard"><img src="../assets/wasac.png" alt="" /><div class="t">WASAC</div><div class="d">Water bills you already pay with MoMo, ready to track in your month.</div></div>
+        <div class="tagcard"><img src="../assets/tap-and-go.png" alt="" /><div class="t">Tap&Go</div><div class="d">Even the small fares, the 300 R₣ ones that hide.</div></div>
+        <div class="tagcard"><img src="../assets/canal-plus.png" alt="" /><div class="t">Canal+</div><div class="d">Subscriptions stop hiding in the noise.</div></div>
+        <div class="tagcard"><img src="../assets/phone-bill.png" alt="" /><div class="t">Phone Bill & airtime</div><div class="d">The small payments that eat the month. Capture first, categorize later.</div></div>
+        <div class="tagcard"><img src="../assets/rra.png" alt="" /><div class="t">RRA & more</div><div class="d">If you paid it on MoMo, Fundt can capture it for you to categorize.</div></div>
       </div>
     </div>
   </section>
   <section class="block b-leaf">
     <div class="block-in">
       <h2>Loud page. Quiet app.</h2>
-      <p class="lead">Your money data never joins a market. It is parsed on your phone, shown to you alone, and deleted for good when you say so.</p>
+      <p class="lead">Your money data never joins a market. It stays on your phone by default, shown to you alone. Backup is optional. Delete anytime.</p>
       <div class="trust">
-        <div>On device<small>Messages are read and sorted on your phone.</small></div>
+        <div>On device<small>SMS stays local unless you turn on backup.</small></div>
         <div>Never sold<small>No fine print that says otherwise.</small></div>
-        <div>Actually deleted<small>Remove your data anytime. Gone is gone.</small></div>
+        <div>Actually deleted<small>Clear local data anytime. Signed-in accounts get a short grace period, then they're gone.</small></div>
       </div>
     </div>
   </section>
