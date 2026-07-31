@@ -14,7 +14,7 @@ Situation: they already pay bills, send airtime, tap transit, and transfer cash 
 
 ## Product Purpose
 
-Fundt shows where MoMo spending went - categorized, month-aware, without turning budgeting into homework. Success is a clear monthly picture and a first logged transaction that proves the loop works.
+Fundt shows where MoMo spending went - month-aware, with categories you assign - without turning budgeting into homework. MoMo SMS capture logs outside MoMo activity and confirms payments started in Fundt; it does not auto-sort into categories. Success is a clear monthly picture and a first logged transaction that proves the loop works.
 
 ## Positioning
 
@@ -44,7 +44,7 @@ Fundt is built around real MoMo life (SMS/USSD, local bill providers, irregular 
 
 ## Evidence on Hand
 
-- Current landing: `index.html` / `styles.css` (centered light waitlist)
+- Landing: Month concept at root (`index.html` / `variants/taste-month.html`) with locked "Where it went" hero copy
 - App tokens: `fundt-frontend/theme/tokens.ts`
 - Product language: `CONTEXT.md`
 - Assets: logo, favicon, provider icons
