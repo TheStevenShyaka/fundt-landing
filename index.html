@@ -21,7 +21,10 @@ FORM: Taste / Month. V7 M7 D3.
 
 <header class="nav">
   <a class="brand" href="#top"><img src="assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="privacy.html">Privacy</a>
+  <div class="nav-links">
+    <a class="link" href="#faq">FAQ</a>
+    <a class="link" href="privacy.html">Privacy</a>
+  </div>
 </header>
 <main id="top">
   <section class="hero">
@@ -111,6 +114,31 @@ FORM: Taste / Month. V7 M7 D3.
       </div>
     </div>
   </section>
+  <section class="faq" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>Does Fundt see my MoMo PIN or balance?</summary>
+        <p>No. Fundt never processes payments. You dial USSD yourself and we only save what you choose to record.</p>
+      </details>
+      <details>
+        <summary>What happens in Local Mode?</summary>
+        <p>Your categories, budgets, and transactions stay on this phone until you sign in and agree to Cloud Sync.</p>
+      </details>
+      <details>
+        <summary>How do I back up my data?</summary>
+        <p>Sign in with Google or Apple from Profile. After you agree to Cloud Sync, your data syncs to your account.</p>
+      </details>
+      <details>
+        <summary>Can I export my history?</summary>
+        <p>Yes. Open Privacy &amp; data from Profile and tap Download my data to share a CSV file.</p>
+      </details>
+      <details>
+        <summary>Why does Fundt ask for contacts?</summary>
+        <p>Only to help you pick a recipient faster. Contacts never leave your device.</p>
+      </details>
+    </div>
+  </section>
   <section class="cta">
     <h2>Be first when it ships.</h2>
     
@@ -121,7 +149,7 @@ FORM: Taste / Month. V7 M7 D3.
   <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="privacy.html">Privacy</a> · © <span data-year></span></span></footer>
+<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="privacy.html">Privacy</a> · © <span data-year></span></span></footer>
 <script src="shared/waitlist.js"></script>
 </body>
 </html>
