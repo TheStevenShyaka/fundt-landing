@@ -149,6 +149,23 @@ img {
   color: var(--ink);
 }
 
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-end > a:not(.btn) {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.nav-end > a:not(.btn):hover {
+  color: var(--ink);
+}
+
 .btn-nav {
   padding: 11px 22px;
   font-size: 14px;
