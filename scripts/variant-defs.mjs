@@ -429,7 +429,9 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;max-width:1140px;margin:0 auto}
 .brand{display:flex;gap:10px;align-items:center;font-weight:700;font-size:18px}
 .brand img{width:32px;height:32px;border-radius:9px}
+.nav-links{display:flex;gap:20px;align-items:center}
 .nav a.link{color:var(--muted);font-size:14px}
+.nav a.link:hover{color:var(--ink)}
 .hero{max-width:1140px;margin:0 auto;padding:48px 28px 0;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;min-height:calc(100dvh - 76px)}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.1rem);line-height:1.04;letter-spacing:-.02em}
 .hero h1 em{font-style:normal;color:var(--accent)}
@@ -519,6 +521,15 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .viz-bchip{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;margin-top:2px;padding:6px 10px;border-radius:999px;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.28);font-size:11.5px;font-weight:700;line-height:14px;color:#fbbf24;opacity:0;animation:chipIn .4s .85s cubic-bezier(.33,1,.68,1) both}
 .viz-bchip svg{width:13px;height:13px;flex:none}
 @keyframes chipIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.faq{max-width:1140px;margin:56px auto 0;padding:0 28px;display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start}
+.faq h2{font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.02em;line-height:1.1}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;font-weight:700;font-size:15px;line-height:21px;color:var(--bright);cursor:pointer;list-style:none}
+.faq-list summary::-webkit-details-marker,.faq-list summary::marker{display:none;content:""}
+.faq-list summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s;flex:none;margin-top:-4px}
+.faq-list details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+.faq-list details p{padding:0 30px 16px 0;color:var(--muted);font-size:14px;line-height:20px}
 .cta{max-width:1140px;margin:48px auto 0;padding:0 28px 56px;text-align:center}
 .cta h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 .cta .waitlist-form{justify-content:center}
@@ -526,6 +537,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 @media(max-width:900px){
 .hero{grid-template-columns:1fr;min-height:auto}
 .claims{grid-template-columns:1fr}
+.faq{grid-template-columns:1fr;gap:18px}
 .hist-amt .n{font-size:32px}
 .col-bars{height:180px}
 .col:nth-child(1) .track{--h:148px}.col:nth-child(1) .track-inner{height:148px}
@@ -538,7 +550,10 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <div class="nav-links">
+    <a class="link" href="#faq">FAQ</a>
+    <a class="link" href="../privacy.html">Privacy</a>
+  </div>
 </header>
 <main id="top">
   <section class="hero">
@@ -623,11 +638,36 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       </div>
     </div>
   </section>
+  <section class="faq" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>Does Fundt see my MoMo PIN or balance?</summary>
+        <p>No. Fundt never processes payments. You dial USSD yourself and we only save what you choose to record.</p>
+      </details>
+      <details>
+        <summary>What happens in Local Mode?</summary>
+        <p>Your categories, budgets, and transactions stay on this phone until you sign in and agree to Cloud Sync.</p>
+      </details>
+      <details>
+        <summary>How do I back up my data?</summary>
+        <p>Sign in with Google or Apple from Profile. After you agree to Cloud Sync, your data syncs to your account.</p>
+      </details>
+      <details>
+        <summary>Can I export my history?</summary>
+        <p>Yes. Open Privacy &amp; data from Profile and tap Download my data to share a CSV file.</p>
+      </details>
+      <details>
+        <summary>Why does Fundt ask for contacts?</summary>
+        <p>Only to help you pick a recipient faster. Contacts never leave your device.</p>
+      </details>
+    </div>
+  </section>
   <section class="cta">
     <h2>Be first when it ships.</h2>
     ${waitlist()}
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 ];
