@@ -130,28 +130,30 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <a class="brand" href="/">
-        <img src="assets/icon.png" alt="" />Fundt
-      </a>
-      <a
-        class="footer-social"
-        href="https://www.instagram.com/buildingfundt.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Fundt on Instagram"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" />
-          <circle cx="12" cy="12" r="4.35" fill="none" stroke="currentColor" stroke-width="1.7" />
-          <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor" />
-        </svg>
-      </a>
-      <p class="footer-copy">&copy; <span id="year"></span> Fundt. All rights reserved.</p>
+      <a class="brand" href="/"><img src="assets/icon.png" alt="" />Fundt</a>
+      <p class="footer-copy">&copy; <span data-year></span> Fundt. All rights reserved.</p>
+      <div class="footer-socials">
+        <a
+          class="footer-social"
+          href="https://www.instagram.com/buildingfundt.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Fundt on Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+            <circle cx="12" cy="12" r="4.35" fill="none" stroke="currentColor" stroke-width="1.7" />
+            <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll("[data-year]").forEach((el) => {
+      el.textContent = String(new Date().getFullYear());
+    });
   </script>
 </body>
 </html>
