@@ -13,8 +13,8 @@
 <!--
 THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
-STORY: See History total + top 5 → clear month → waitlist.
-FIRST VIEWPORT: Copy left, Figma iPhone History mockup right, waitlist in view.
+STORY: See History total + top 5 → clear month. Waitlist returns as Download at ship.
+FIRST VIEWPORT: Copy left, Figma iPhone History mockup right, scroll chevron at the fold.
 HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.
 -->
@@ -46,8 +46,13 @@ FORM: Taste / Month. V7 M7 D3.
         alt="Fundt History on iPhone"
       />
     </div>
+    <a class="hero-hint" href="#claims" aria-label="Scroll for more">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </a>
   </section>
-  <section class="claims">
+  <section class="claims" id="claims">
     <div class="claim">
       <h3>Capture, don't auto-sort</h3>
       <p>MoMo SMS logs the payment. It does not pick Transport or Groceries for you. You categorize untracked items.</p>
@@ -116,15 +121,6 @@ FORM: Taste / Month. V7 M7 D3.
         <p>Only to help you pick a recipient faster. Contacts never leave your device.</p>
       </details>
     </div>
-  </section>
-  <section class="cta">
-    <h2>Be first when it ships.</h2>
-    
-  <form class="waitlist-form" novalidate>
-    <input type="email" name="email" class="waitlist-input" placeholder="you@example.com" autocomplete="email" required aria-label="Email address" />
-    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
-  </form>
-  <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
   </section>
 </main>
 
