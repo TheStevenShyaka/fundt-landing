@@ -52,7 +52,7 @@ ${body}
 function toRootBody(body) {
   return body
     .replaceAll("../assets/", "assets/")
-    .replaceAll("../privacy.html", "privacy.html");
+    .replaceAll("../privacy.html", "/privacy");
 }
 
 const KEEP = new Set(["taste-month"]);

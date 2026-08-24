@@ -1,18 +1,9 @@
-/* =====================================================
-   Privacy policy: markdown-style reading layout
-   ===================================================== */
-
-.policy-page {
-  --font: "Nunito", system-ui, sans-serif;
-  background: #fbfcfe;
-  font-family: var(--font);
-  font-weight: 500;
-}
+/* Privacy policy: same dark Month chrome as the landing page. */
 
 .policy-doc {
   max-width: 680px;
   margin: 0 auto;
-  padding: 72px 24px 96px;
+  padding: 48px 28px 96px;
 }
 
 .policy-kicker {
@@ -20,7 +11,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-subtle);
+  color: var(--muted);
   margin-bottom: 12px;
 }
 
@@ -35,20 +26,20 @@
 .policy-meta {
   margin-top: 14px;
   font-size: 14.5px;
-  color: var(--ink-subtle);
+  color: var(--muted);
 }
 
 .policy-lead {
   margin-top: 28px;
   font-size: 18px;
   line-height: 1.65;
-  color: var(--ink-muted);
+  color: var(--muted);
   text-wrap: pretty;
 }
 
 .policy-rule {
   border: none;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--line);
   margin: 40px 0;
 }
 
@@ -67,7 +58,7 @@
 .policy-doc p {
   font-size: 16.5px;
   line-height: 1.7;
-  color: var(--ink-muted);
+  color: var(--muted);
   text-wrap: pretty;
 }
 
@@ -76,7 +67,7 @@
 }
 
 .policy-doc strong {
-  color: var(--ink);
+  color: var(--bright);
   font-weight: 700;
 }
 
@@ -101,16 +92,77 @@
 .policy-doc li {
   font-size: 16.5px;
   line-height: 1.65;
-  color: var(--ink-muted);
+  color: var(--muted);
   text-wrap: pretty;
 }
 
 .policy-doc li strong {
+  color: var(--bright);
+}
+
+.nav a.link[aria-current="page"] {
   color: var(--ink);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-inner > .brand {
+  justify-self: start;
+}
+
+.footer-social {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--muted);
+}
+
+.footer-social svg {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-social:hover {
+  color: var(--ink);
+}
+
+.footer-copy {
+  justify-self: end;
+  margin: 0;
+  text-align: right;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 @media (max-width: 860px) {
   .policy-doc {
-    padding-top: 48px;
+    padding: 32px 28px 72px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .footer-inner > .brand,
+  .footer-copy {
+    justify-self: center;
+    text-align: center;
   }
 }
