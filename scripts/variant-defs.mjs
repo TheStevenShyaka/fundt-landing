@@ -25,6 +25,29 @@ const waitlist = () => `
   </form>
   <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>`;
 
+const siteFooter = (assetPrefix = "../assets/") => `
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="brand" href="/"><img src="${assetPrefix}icon.png" alt="" />Fundt</a>
+    <p class="footer-copy">&copy; <span data-year></span> Fundt. All rights reserved.</p>
+    <div class="footer-socials">
+      <a
+        class="footer-social"
+        href="https://www.instagram.com/buildingfundt.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fundt on Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="12" cy="12" r="4.35" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>`;
+
 export const defs = [
 
   // ============================================================
@@ -416,11 +439,11 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     skill: "taste",
     id: "taste-month",
     tab: "Month",
-    title: "Fundt · Month",
+    title: "Fundt · App",
     contract: `THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
 STORY: See History total + top 5 → clear month → waitlist.
-FIRST VIEWPORT: Locked hero copy left, History hero + HistoryCategoryTrendChart right.
+FIRST VIEWPORT: Copy left, Figma iPhone History mockup right, waitlist in view.
 HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.`,
     css: RESET + `
@@ -432,10 +455,15 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .nav-links{display:flex;gap:20px;align-items:center}
 .nav a.link{color:var(--muted);font-size:14px}
 .nav a.link:hover{color:var(--ink)}
-.hero{max-width:1140px;margin:0 auto;padding:48px 28px 0;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;min-height:calc(100dvh - 76px)}
+.hero{max-width:1140px;margin:0 auto;padding:48px 28px 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;min-height:calc(100dvh - 76px)}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.1rem);line-height:1.04;letter-spacing:-.02em}
 .hero h1 em{font-style:normal;color:var(--accent)}
+.hero-copy{min-width:0}
 .hero-sub{margin-top:18px;color:var(--muted);font-size:1.08rem;max-width:38ch}
+.hero-visual{position:relative;align-self:stretch;min-height:640px;overflow:hidden}
+.hero-mock{position:absolute;left:50%;top:64px;width:312px;max-width:none;height:auto;transform:translateX(-50%);pointer-events:none;animation:heroFloat 5s ease-in-out infinite}
+@keyframes heroFloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-10px)}}
+.hero-visual::after{content:"";position:absolute;left:-16px;right:-16px;bottom:0;z-index:1;height:208px;pointer-events:none;background:linear-gradient(180deg,transparent 0%,var(--bg) 88%)}
 .waitlist-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
 .waitlist-input{flex:1;min-width:200px;background:#191D24;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .waitlist-input:focus{outline:2px solid rgba(0,144,255,.45)}
@@ -443,36 +471,6 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .btn:hover{filter:brightness(1.1)}
 .waitlist-note{margin-top:12px;font-size:13px;color:var(--muted)}
 .waitlist-note.success{color:#4ade80}.waitlist-note.error{color:#fb7185}
-/* History tab surface: mirrors app/(tabs)/history.tsx heroBlock + HistoryCategoryTrendChart */
-.hist{background:var(--page);border:1px solid var(--line);border-radius:24px;padding:20px 0 16px;overflow:hidden;animation:histIn .7s cubic-bezier(.2,.9,.3,1) both}
-@keyframes histIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.hist-chrome{padding:0 16px 12px;display:flex;justify-content:space-between;align-items:center}
-.hist-chrome .t{font-size:22px;font-weight:700;letter-spacing:-.02em;color:#fff;line-height:1.2}
-.hist-body{display:grid;gap:16px;padding:0 0 4px}
-.period{align-self:start;justify-self:start;width:fit-content;margin:0 16px;display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:0 14px;border:0;border-radius:22px;background:rgba(255,255,255,.08);color:#fff;font-weight:700;font-size:15px;line-height:20px;cursor:default}
-.period svg{width:16px;height:16px;opacity:.85;flex:none}
-.hist-amt{display:flex;align-items:baseline;gap:6px;padding:0 16px;animation:amtIn .55s .15s ease both}
-@keyframes amtIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.hist-amt .n{font-size:36px;font-weight:700;line-height:44px;letter-spacing:-1.44px;color:var(--bright)}
-.hist-amt .c{font-size:22px;font-weight:500;line-height:44px;letter-spacing:-.88px;color:var(--soft)}
-/* Chart row: 200px bar stage (app CHART_HEIGHT) + category labels under columns */
-.trend{display:flex;align-items:flex-end;gap:8px;padding:0 16px}
-.col{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
-.col-bars{width:100%;height:200px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
-.badge{background:var(--surface);border-radius:999px;padding:4px 8px;max-width:100%;font-size:12px;font-weight:700;line-height:16px;color:var(--bright);text-align:center;white-space:nowrap;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both}
-.track{width:100%;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;height:0;animation:barGrow .52s cubic-bezier(.33,1,.68,1) both}
-.track-inner{width:100%;border-radius:16px;padding:4px;background-color:var(--surface);background-image:repeating-linear-gradient(135deg,var(--hatch) 0 8px,transparent 8px 20px);overflow:hidden;box-sizing:border-box}
-.emoji{width:100%;min-height:32px;border-radius:999px;background:var(--page);display:grid;place-items:center;font-size:20px;line-height:24px;padding:4px 0;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both}
-.cat-label{display:block;width:100%;min-height:16px;opacity:0;animation:labelIn .34s cubic-bezier(.33,1,.68,1) both;font-size:10.5px;font-weight:700;line-height:13px;color:var(--bright);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-/* App timing: HERO_GAUGE_DELAY 220ms, stagger 90ms, reveal 520ms → labels after last bar (~1100ms) */
-.col:nth-child(1) .track{--h:168px;animation-delay:.22s}.col:nth-child(1) .track-inner{height:168px}.col:nth-child(1) .badge,.col:nth-child(1) .emoji,.col:nth-child(1) .cat-label{animation-delay:1.1s}
-.col:nth-child(2) .track{--h:100px;animation-delay:.31s}.col:nth-child(2) .track-inner{height:100px}.col:nth-child(2) .badge,.col:nth-child(2) .emoji,.col:nth-child(2) .cat-label{animation-delay:1.19s}
-.col:nth-child(3) .track{--h:78px;animation-delay:.4s}.col:nth-child(3) .track-inner{height:78px}.col:nth-child(3) .badge,.col:nth-child(3) .emoji,.col:nth-child(3) .cat-label{animation-delay:1.28s}
-.col:nth-child(4) .track{--h:50px;animation-delay:.49s}.col:nth-child(4) .track-inner{height:50px}.col:nth-child(4) .badge,.col:nth-child(4) .emoji,.col:nth-child(4) .cat-label{animation-delay:1.37s}
-.col:nth-child(5) .track{--h:44px;animation-delay:.58s}.col:nth-child(5) .track-inner{height:44px}.col:nth-child(5) .badge,.col:nth-child(5) .emoji,.col:nth-child(5) .cat-label{animation-delay:1.46s}
-@keyframes barGrow{from{height:0}to{height:var(--h)}}
-@keyframes labelIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.hist-note{margin:14px 16px 0;font-size:11.5px;color:var(--muted);line-height:1.4}
 /* Claim cards: copy above mini app UI */
 .claims{max-width:1140px;margin:48px auto 0;padding:0 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
 .claim{background:var(--bg);padding:22px 20px 24px;display:flex;flex-direction:column;gap:0;min-height:100%}
@@ -533,18 +531,28 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .cta{max-width:1140px;margin:48px auto 0;padding:0 28px 56px;text-align:center}
 .cta h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 .cta .waitlist-form{justify-content:center}
-.foot{max-width:1140px;margin:0 auto;padding:22px 28px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.footer{border-top:1px solid var(--line)}
+.footer-inner{max-width:1140px;margin:0 auto;padding:22px 28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+.footer-inner>.brand{justify-self:start}
+.footer-copy{justify-self:center;margin:0;text-align:center;font-size:13px;color:var(--muted)}
+.footer-socials{justify-self:end;display:flex;align-items:center;justify-content:flex-end;gap:4px}
+.footer-social{display:flex;align-items:center;justify-content:center;width:40px;height:40px;color:var(--muted)}
+.footer-social svg{width:22px;height:22px}
+.footer-social:hover{color:var(--ink)}
 @media(max-width:900px){
-.hero{grid-template-columns:1fr;min-height:auto}
+.hero{grid-template-columns:minmax(0,1fr);min-height:auto;padding:48px 28px 0;gap:44px}
+.hero h1{font-size:clamp(2.15rem,8vw,2.7rem)}
+.hero-sub{margin-top:16px}
+.hero .waitlist-form{flex-direction:column;align-items:stretch;gap:12px;margin-top:28px}
+.hero .waitlist-input{min-width:0;width:100%}
+.hero .btn{width:100%}
+.hero-visual{min-height:0;height:min(58vh,500px);margin:0}
+.hero-mock{top:28px;width:min(70%,268px)}
+.hero-visual::after{height:160px}
 .claims{grid-template-columns:1fr}
 .faq{grid-template-columns:1fr;gap:18px}
-.hist-amt .n{font-size:32px}
-.col-bars{height:180px}
-.col:nth-child(1) .track{--h:148px}.col:nth-child(1) .track-inner{height:148px}
-.col:nth-child(2) .track{--h:88px}.col:nth-child(2) .track-inner{height:88px}
-.col:nth-child(3) .track{--h:69px}.col:nth-child(3) .track-inner{height:69px}
-.col:nth-child(4) .track{--h:44px}.col:nth-child(4) .track-inner{height:44px}
-.col:nth-child(5) .track{--h:44px}.col:nth-child(5) .track-inner{height:44px}
+.footer-inner{grid-template-columns:1fr;justify-items:center;gap:12px}
+.footer-inner>.brand,.footer-copy,.footer-socials{justify-self:center}
 }
 `,
     body: `
@@ -556,40 +564,19 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 </header>
 <main id="top">
   <section class="hero">
-    <div>
+    <div class="hero-copy">
       <h1>Know where your MoMo <em>went</em>.</h1>
       <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
       <div id="waitlist">${waitlist()}</div>
     </div>
-    <div class="hist" aria-label="History: month total and top category charts">
-      <div class="hist-chrome"><span class="t">History</span></div>
-      <div class="hist-body">
-        <span class="period">This month<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4.2 6.2a.75.75 0 0 1 1.06 0L8 8.94l2.74-2.74a.75.75 0 1 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L4.2 7.26a.75.75 0 0 1 0-1.06z"/></svg></span>
-        <div class="hist-amt"><span class="n">56,100</span><span class="c">R₣</span></div>
-        <div class="trend" role="img" aria-label="Top five category spend this month: Friends and Family, Electricity, Groceries, Transport, Phone Bill">
-          <div class="col">
-            <div class="col-bars"><span class="badge">21k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">👨‍👩‍👧</span></div></div></div>
-            <span class="cat-label">Friends</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">12.5k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">⚡</span></div></div></div>
-            <span class="cat-label">Electricity</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">9.8k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🛒</span></div></div></div>
-            <span class="cat-label">Groceries</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">6.3k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🚌</span></div></div></div>
-            <span class="cat-label">Transport</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">4.2k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">📱</span></div></div></div>
-            <span class="cat-label">Phone</span>
-          </div>
-        </div>
-      </div>
-      <p class="hist-note">Your top spending in August</p>
+    <div class="hero-visual">
+      <img
+        class="hero-mock"
+        src="../assets/hero-iphone.png"
+        width="312"
+        height="657"
+        alt="Fundt History on iPhone"
+      />
     </div>
   </section>
   <section class="claims">
@@ -667,6 +654,6 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     ${waitlist()}
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
+${siteFooter()}`,
   },
 ];
