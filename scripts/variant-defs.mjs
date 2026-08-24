@@ -551,7 +551,6 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
   <div class="nav-links">
-    <a class="link" href="#faq">FAQ</a>
     <a class="link" href="/privacy">Privacy</a>
   </div>
 </header>
