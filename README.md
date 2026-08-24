@@ -42,9 +42,9 @@ Until then, emails store in `localStorage` under `fundt-waitlist`.
 
 ## Privacy Policy
 
-Canonical URL: [https://fundt.app/privacy](https://fundt.app/privacy) (`privacy/index.html`).
+Canonical URL: [https://fundt.app/privacy](https://fundt.app/privacy).
 
-`privacy.html` redirects there so older App Store / in-app links keep working. Linked from the Month page nav and footer.
+GitHub Pages serves `privacy.html` at both `/privacy` and `/privacy.html`, so the policy lives in that root file. Do not also add a `privacy/` folder: Pages will then send `/privacy` to a stub and the page will loop.
 
 ## Product context
 
