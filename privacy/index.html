@@ -12,22 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../variants/taste-month.css" />
   <link rel="stylesheet" href="../policy.css" />
 </head>
 <body class="policy-page">
 
-  <header class="nav-wrap">
-    <nav class="nav">
-      <a class="nav-brand" href="/">
-        <img src="../assets/icon.png" alt="Fundt logo" class="nav-logo" />
-        <span class="nav-name">Fundt</span>
-      </a>
-      <div class="nav-end">
-        <a href="/#faq">FAQ</a>
-        <a href="/#waitlist" class="btn btn-primary btn-nav">Join the Waitlist</a>
-      </div>
-    </nav>
+  <header class="nav">
+    <a class="brand" href="/"><img src="../assets/icon.png" alt="" />Fundt</a>
+    <div class="nav-links">
+      <a class="link" href="/privacy" aria-current="page">Privacy</a>
+    </div>
   </header>
 
   <main class="policy-doc">
@@ -136,14 +130,23 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <a class="nav-brand" href="/">
-        <img src="../assets/icon.png" alt="Fundt logo" class="nav-logo" />
-        <span class="nav-name">Fundt</span>
+      <a class="brand" href="/">
+        <img src="../assets/icon.png" alt="" />Fundt
       </a>
-      <div class="footer-links">
-        <a href="/#faq">FAQ</a>
-        <p>&copy; <span id="year"></span> Fundt. All rights reserved.</p>
-      </div>
+      <a
+        class="footer-social"
+        href="https://www.instagram.com/buildingfundt.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fundt on Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="12" cy="12" r="4.35" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor" />
+        </svg>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> Fundt. All rights reserved.</p>
     </div>
   </footer>
 
