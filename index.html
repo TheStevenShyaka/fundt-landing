@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fundt · Month</title>
+  <title>Fundt · App</title>
   <meta name="description" content="Know where your MoMo went. Capture, organize, and budget with Fundt." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
 THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
 STORY: See History total + top 5 → clear month → waitlist.
-FIRST VIEWPORT: Locked hero copy left, History hero + HistoryCategoryTrendChart right.
+FIRST VIEWPORT: Copy left, Figma iPhone History mockup right, waitlist in view.
 HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.
 -->
@@ -27,7 +27,7 @@ FORM: Taste / Month. V7 M7 D3.
 </header>
 <main id="top">
   <section class="hero">
-    <div>
+    <div class="hero-copy">
       <h1>Know where your MoMo <em>went</em>.</h1>
       <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
       <div id="waitlist">
@@ -37,35 +37,14 @@ FORM: Taste / Month. V7 M7 D3.
   </form>
   <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p></div>
     </div>
-    <div class="hist" aria-label="History: month total and top category charts">
-      <div class="hist-chrome"><span class="t">History</span></div>
-      <div class="hist-body">
-        <span class="period">This month<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4.2 6.2a.75.75 0 0 1 1.06 0L8 8.94l2.74-2.74a.75.75 0 1 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L4.2 7.26a.75.75 0 0 1 0-1.06z"/></svg></span>
-        <div class="hist-amt"><span class="n">56,100</span><span class="c">R₣</span></div>
-        <div class="trend" role="img" aria-label="Top five category spend this month: Friends and Family, Electricity, Groceries, Transport, Phone Bill">
-          <div class="col">
-            <div class="col-bars"><span class="badge">21k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">👨‍👩‍👧</span></div></div></div>
-            <span class="cat-label">Friends</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">12.5k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">⚡</span></div></div></div>
-            <span class="cat-label">Electricity</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">9.8k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🛒</span></div></div></div>
-            <span class="cat-label">Groceries</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">6.3k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">🚌</span></div></div></div>
-            <span class="cat-label">Transport</span>
-          </div>
-          <div class="col">
-            <div class="col-bars"><span class="badge">4.2k</span><div class="track"><div class="track-inner"><span class="emoji" aria-hidden="true">📱</span></div></div></div>
-            <span class="cat-label">Phone</span>
-          </div>
-        </div>
-      </div>
-      <p class="hist-note">Your top spending in August</p>
+    <div class="hero-visual">
+      <img
+        class="hero-mock"
+        src="assets/hero-iphone.png"
+        width="312"
+        height="657"
+        alt="Fundt History on iPhone"
+      />
     </div>
   </section>
   <section class="claims">
@@ -148,7 +127,28 @@ FORM: Taste / Month. V7 M7 D3.
   <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="brand" href="/"><img src="assets/icon.png" alt="" />Fundt</a>
+    <p class="footer-copy">&copy; <span data-year></span> Fundt. All rights reserved.</p>
+    <div class="footer-socials">
+      <a
+        class="footer-social"
+        href="https://www.instagram.com/buildingfundt.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fundt on Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2.4" y="2.4" width="19.2" height="19.2" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="12" cy="12" r="4.35" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
 <script src="shared/waitlist.js"></script>
 </body>
 </html>
