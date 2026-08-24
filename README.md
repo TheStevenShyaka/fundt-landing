@@ -42,7 +42,9 @@ Until then, emails store in `localStorage` under `fundt-waitlist`.
 
 ## Privacy Policy
 
-`privacy.html` is unchanged and still the app's policy URL target. Linked from the Month page nav and footer.
+Canonical URL: [https://fundt.app/privacy](https://fundt.app/privacy) (`privacy/index.html`).
+
+`privacy.html` redirects there so older App Store / in-app links keep working. Linked from the Month page nav and footer.
 
 ## Product context
 
