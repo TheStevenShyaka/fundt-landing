@@ -5,3 +5,6 @@ Thumbs.db
 .idea/
 node_modules/
 .cache/
+
+# Video editing masters — do not commit.
+*.mov
