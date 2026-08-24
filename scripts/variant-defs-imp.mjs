@@ -100,7 +100,7 @@ body{background:var(--page);color:var(--title);line-height:1.5}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
   <section class="hero">
@@ -151,7 +151,7 @@ body{background:var(--page);color:var(--title);line-height:1.5}
     <img src="../assets/rra.png" alt="RRA" />
   </div>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 
   // ============================================================
@@ -209,7 +209,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.45}
   <header class="t-head">
     <img src="../assets/icon.png" alt="" />
     <div><div class="n">Fundt</div><div class="s">reads your MoMo messages · on device</div></div>
-    <a href="../privacy.html">Privacy</a>
+    <a href="/privacy">Privacy</a>
   </header>
   <main class="msgs" id="top">
     <div class="big">
@@ -337,7 +337,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
   <section class="hero">
@@ -413,7 +413,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     </div>
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 
   // ============================================================
@@ -464,7 +464,7 @@ body{background:var(--bg);color:var(--ink);overflow:hidden}
 <div class="one" id="top">
   <header class="top">
     <span class="brand"><img src="../assets/icon.png" alt="" />Fundt</span>
-    <a href="../privacy.html">Privacy</a>
+    <a href="/privacy">Privacy</a>
   </header>
   <main class="mid">
     <img class="mark" src="../assets/icon.png" alt="Fundt app icon" />
@@ -559,7 +559,7 @@ body{background:var(--ink);color:#fff;line-height:1.45}
   <section class="block b-cobalt hero-block">
     <nav class="nav">
       <span class="brand"><img src="../assets/icon.png" alt="" />Fundt</span>
-      <a href="../privacy.html">Privacy</a>
+      <a href="/privacy">Privacy</a>
     </nav>
     <div class="block-in">
       <h1>Every franc, accounted for.</h1>
@@ -615,6 +615,6 @@ body{background:var(--ink);color:#fff;line-height:1.45}
     </div>
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 ];

@@ -89,7 +89,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
   <section class="hero">
@@ -138,7 +138,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden}
     </div>
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 
   // ============================================================
@@ -204,7 +204,7 @@ body{overflow:hidden}
       </form>
       <p class="waitlist-note" data-default="One email when Fundt ships. Maybe two.">One email when Fundt ships. Maybe two.</p>
     </div>
-    <p class="mini-foot">© <span data-year></span> Fundt · <a href="../privacy.html">Privacy</a></p>
+    <p class="mini-foot">© <span data-year></span> Fundt · <a href="/privacy">Privacy</a></p>
   </section>
 </main>`,
   },
@@ -268,7 +268,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
   <section class="hero">
@@ -308,7 +308,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     <img src="../assets/rra.png" alt="RRA" />
   </div>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 
   // ============================================================
@@ -369,7 +369,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     body: `
 <header class="nav">
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
-  <a class="link" href="../privacy.html">Privacy</a>
+  <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
   <section class="hero">
@@ -406,7 +406,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     <img src="../assets/rra.png" alt="RRA" />
   </div>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 
   // ============================================================
@@ -552,7 +552,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
   <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
   <div class="nav-links">
     <a class="link" href="#faq">FAQ</a>
-    <a class="link" href="../privacy.html">Privacy</a>
+    <a class="link" href="/privacy">Privacy</a>
   </div>
 </header>
 <main id="top">
@@ -668,6 +668,6 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     ${waitlist()}
   </section>
 </main>
-<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="../privacy.html">Privacy</a> · © <span data-year></span></span></footer>`,
+<footer class="foot"><span>Fundt</span><span><a href="#faq">FAQ</a> · <a href="/privacy">Privacy</a> · © <span data-year></span></span></footer>`,
   },
 ];
