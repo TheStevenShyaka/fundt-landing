@@ -32,13 +32,9 @@ Definitions live in `scripts/variant-defs.mjs`. Older concept defs may remain in
 
 ## Collecting emails
 
-Shared handler: `shared/waitlist.js`. Set:
+The live form posts to the Loops form endpoint in `shared/waitlist.js` (urlencoded `email`, plus `source` and `userGroup`). That URL is public on purpose. Do not put a Loops API key in this repo.
 
-```js
-const WAITLIST_ENDPOINT = "https://formspree.io/f/your-form-id";
-```
-
-Until then, emails store in `localStorage` under `fundt-waitlist`.
+Waitlist contacts show up in the Loops Audience. Welcome mail is a **Workflow** on contact added, not a Campaign.
 
 ## Privacy Policy
 
