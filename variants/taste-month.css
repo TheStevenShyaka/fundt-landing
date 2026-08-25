@@ -24,8 +24,9 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero-visual{position:relative;align-self:stretch;min-height:640px;overflow:hidden}
 .hero-mock{position:absolute;left:50%;top:64px;width:312px;max-width:none;height:auto;translate:-50% 0;pointer-events:none;animation:heroFloat 5s ease-in-out infinite}
 @keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes heroFloatOpp{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
 .hero-visual::after{content:"";position:absolute;left:-16px;right:-16px;bottom:0;z-index:1;height:208px;pointer-events:none;background:linear-gradient(180deg,transparent 0%,var(--bg) 88%)}
-.hero-hint{position:absolute;left:50%;top:calc(100dvh - 76px - 56px - env(safe-area-inset-bottom,0px));z-index:3;translate:-50% 0;display:grid;place-items:center;width:44px;height:44px;color:var(--muted);animation:heroFloat 5s ease-in-out infinite}
+.hero-hint{position:absolute;left:50%;top:calc(100dvh - 76px - 56px - env(safe-area-inset-bottom,0px));z-index:3;translate:-50% 0;display:grid;place-items:center;width:44px;height:44px;color:var(--muted);animation:heroFloatOpp 5s ease-in-out infinite}
 .hero-hint svg{width:22px;height:22px}
 .hero-hint:hover{color:var(--ink)}
 .waitlist-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
