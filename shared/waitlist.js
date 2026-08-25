@@ -1,9 +1,10 @@
 /*
  * Shared waitlist + year stamp for every landing variant.
- * Set WAITLIST_ENDPOINT to collect for real; otherwise localStorage.
+ * Posts to the Loops form endpoint (urlencoded). Do not use the Loops API key here.
  */
 
-const WAITLIST_ENDPOINT = "";
+const WAITLIST_ENDPOINT =
+  "https://app.loops.so/api/newsletter-form/cmt8xu1ee00us0jwu2ndsa9mx";
 
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
@@ -17,19 +18,35 @@ function setNote(note, message, kind) {
 }
 
 async function submitEmail(email) {
-  if (!WAITLIST_ENDPOINT) {
-    const stored = JSON.parse(localStorage.getItem("fundt-waitlist") || "[]");
-    if (!stored.includes(email)) stored.push(email);
-    localStorage.setItem("fundt-waitlist", JSON.stringify(stored));
-    return;
-  }
-
   const res = await fetch(WAITLIST_ENDPOINT, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({ email }),
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      Accept: "application/json",
+    },
+    body: new URLSearchParams({
+      email,
+      source: "fundt.app",
+      userGroup: "Waitlist",
+    }),
   });
-  if (!res.ok) throw new Error("Request failed");
+
+  if (res.status === 429) {
+    const err = new Error("rate-limit");
+    err.code = "rate-limit";
+    throw err;
+  }
+
+  let data = null;
+  try {
+    data = await res.json();
+  } catch {
+    data = null;
+  }
+
+  if (!res.ok || data?.success === false) {
+    throw new Error(data?.message || "Request failed");
+  }
 }
 
 document.querySelectorAll(".waitlist-form").forEach((form) => {
@@ -57,8 +74,15 @@ document.querySelectorAll(".waitlist-form").forEach((form) => {
       await submitEmail(email);
       setNote(note, "You are on the list. We will email you when Fundt ships.", "success");
       input.value = "";
-    } catch {
-      setNote(note, "Something went wrong. Please try again in a moment.", "error");
+    } catch (err) {
+      const rateLimited = err && err.code === "rate-limit";
+      setNote(
+        note,
+        rateLimited
+          ? "Too many signups just now. Please try again in a moment."
+          : "Something went wrong. Please try again in a moment.",
+        "error"
+      );
     } finally {
       button.disabled = false;
       button.textContent = originalLabel;
