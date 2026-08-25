@@ -524,14 +524,16 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .viz-bchip svg{width:13px;height:13px;flex:none}
 @keyframes chipIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .faq{max-width:1140px;margin:56px auto 0;padding:0 28px 72px;display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start}
+.faq-copy{min-width:0}
 .faq h2{font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.02em;line-height:1.1}
+.faq-lead{margin-top:12px;color:var(--muted);font-size:.95rem;line-height:1.45;max-width:28ch}
 .faq-list{border-top:1px solid var(--line)}
 .faq-list details{border-bottom:1px solid var(--line)}
 .faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;font-weight:700;font-size:15px;line-height:21px;color:var(--bright);cursor:pointer;list-style:none}
 .faq-list summary::-webkit-details-marker,.faq-list summary::marker{display:none;content:""}
 .faq-list summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s;flex:none;margin-top:-4px}
 .faq-list details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
-.faq-list details p{padding:0 30px 16px 0;color:var(--muted);font-size:14px;line-height:20px}
+.faq-list details p{padding:0 30px 16px 0;color:var(--muted);font-size:14px;line-height:21px}
 .footer{border-top:1px solid var(--line)}
 .footer-inner{max-width:1140px;margin:0 auto;padding:22px 28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
 .footer-inner>.brand{justify-self:start}
@@ -631,27 +633,42 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     </div>
   </section>
   <section class="faq" id="faq">
-    <h2>FAQ</h2>
+    <div class="faq-copy">
+      <h2>Common questions</h2>
+      <p class="faq-lead">What Fundt is, how MoMo capture works, and what joining the waitlist actually does.</p>
+    </div>
     <div class="faq-list">
       <details open>
+        <summary>What is Fundt?</summary>
+        <p>Fundt is a personal budgeting app for people whose money moves on MTN MoMo. It helps you capture transfers, organize them by category, and stay on a monthly budget without turning it into homework.</p>
+      </details>
+      <details>
+        <summary>Does Fundt sort my MoMo automatically?</summary>
+        <p>No. A MoMo SMS can log that money moved. It does not pick Transport or Groceries for you. You categorize untracked items when you are ready.</p>
+      </details>
+      <details>
         <summary>Does Fundt see my MoMo PIN or balance?</summary>
-        <p>No. Fundt never processes payments. You dial USSD yourself and we only save what you choose to record.</p>
+        <p>No. Fundt never processes payments and never sees your PIN or balance. You complete transfers in MoMo yourself. Fundt only saves what you choose to record.</p>
       </details>
       <details>
-        <summary>What happens in Local Mode?</summary>
-        <p>Your categories, budgets, and transactions stay on this phone until you sign in and agree to Cloud Sync.</p>
+        <summary>Where does my data live?</summary>
+        <p>Local Mode keeps categories, budgets, and transactions on your phone. If you sign in with Google or Apple and agree to Cloud Sync, that data backs up to your account. Contacts, if you allow them, never leave the device.</p>
       </details>
       <details>
-        <summary>How do I back up my data?</summary>
-        <p>Sign in with Google or Apple from Profile. After you agree to Cloud Sync, your data syncs to your account.</p>
+        <summary>What happens when I join the waitlist?</summary>
+        <p>We save the email you submit and send one note to confirm you are on the list. When Fundt is on the App Store, we email you again. You can unsubscribe any time. That is it.</p>
+      </details>
+      <details>
+        <summary>Is Fundt on the App Store yet?</summary>
+        <p>Not yet. The waitlist is how you hear when it ships. We will not name a date until it is actually ready to download.</p>
       </details>
       <details>
         <summary>Can I export my history?</summary>
-        <p>Yes. Open Privacy &amp; data from Profile and tap Download my data to share a CSV file.</p>
+        <p>Yes. When you are in the app, open Privacy &amp; data from Profile and tap Download my data. You get a CSV you can keep or share.</p>
       </details>
       <details>
-        <summary>Why does Fundt ask for contacts?</summary>
-        <p>Only to help you pick a recipient faster. Contacts never leave your device.</p>
+        <summary>Why would Fundt ask for contacts?</summary>
+        <p>Only to help you pick a recipient faster. Contacts stay on your phone. They are never uploaded.</p>
       </details>
     </div>
   </section>
