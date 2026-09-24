@@ -36,6 +36,14 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .btn:hover{filter:brightness(1.1)}
 .waitlist-note{margin-top:12px;font-size:13px;color:var(--muted)}
 .waitlist-note.success{color:#4ade80}.waitlist-note.error{color:#fb7185}
+.store-row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:flex-start;margin-top:28px}
+.store-badge{display:inline-block;line-height:0}
+.store-badge img{height:54px;width:auto;display:block}
+/* Official badge is 155×60; scale so the mark lines up with the App Store badge. */
+.store-play img{height:81px;width:auto;margin:-13.5px 0}
+.store-badge-soon{opacity:.5}
+.store-note{margin-top:2px;font-size:13px;color:var(--muted)}
+.store-play + .store-note{margin-left:13.2%}
 /* Claim cards: copy above mini app UI */
 .claims{max-width:1140px;margin:48px auto 0;padding:0 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
 .claim{background:var(--bg);padding:22px 20px 24px;display:flex;flex-direction:column;gap:0;min-height:100%}
