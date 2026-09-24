@@ -442,7 +442,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     title: "Fundt · App",
     contract: `THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
-STORY: See History total + top 5 → clear month. Waitlist returns as Download at ship.
+STORY: See History total + top 5 → clear month. Download opens the Rwanda App Store listing.
 FIRST VIEWPORT: Copy left, Figma iPhone History mockup right, scroll chevron at the fold.
 HERO COPY: Know where your MoMo went. / Capture every transfer. Organize by category. Stay on budget without the homework.
 FORM: Taste / Month. V7 M7 D3.`,
@@ -475,6 +475,14 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .btn:hover{filter:brightness(1.1)}
 .waitlist-note{margin-top:12px;font-size:13px;color:var(--muted)}
 .waitlist-note.success{color:#4ade80}.waitlist-note.error{color:#fb7185}
+.store-row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:flex-start;margin-top:28px}
+.store-badge{display:inline-block;line-height:0}
+.store-badge img{height:54px;width:auto;display:block}
+/* Official badge is 155×60; scale so the mark lines up with the App Store badge. */
+.store-play img{height:81px;width:auto;margin:-13.5px 0}
+.store-badge-soon{opacity:.5}
+.store-note{margin-top:2px;font-size:13px;color:var(--muted)}
+.store-play + .store-note{margin-left:13.2%}
 /* Claim cards: copy above mini app UI */
 .claims{max-width:1140px;margin:48px auto 0;padding:0 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
 .claim{background:var(--bg);padding:22px 20px 24px;display:flex;flex-direction:column;gap:0;min-height:100%}
@@ -570,7 +578,20 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     <div class="hero-copy">
       <h1>Know where your MoMo <em>went</em>.</h1>
       <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
-      <div id="waitlist">${waitlist()}</div>
+      <div class="store-row">
+        <div>
+          <a class="store-badge" href="https://apps.apple.com/rw/app/fundt/id6785270946">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" width="162" height="54" alt="Download on the App Store" />
+          </a>
+          <p class="store-note">Free on iOS.</p>
+        </div>
+        <div>
+          <span class="store-badge store-badge-soon store-play" role="img" aria-label="Get it on Google Play, coming soon">
+            <img src="../assets/google-play-badge.svg" width="155" height="60" alt="" />
+          </span>
+          <p class="store-note">Coming soon.</p>
+        </div>
+      </div>
     </div>
     <div class="hero-visual">
       <img
@@ -635,7 +656,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
   <section class="faq" id="faq">
     <div class="faq-copy">
       <h2>Common questions</h2>
-      <p class="faq-lead">What Fundt is, how MoMo capture works, and what joining the waitlist actually does.</p>
+      <p class="faq-lead">What Fundt is, how MoMo capture works, and how to get it.</p>
     </div>
     <div class="faq-list">
       <details open>
@@ -655,12 +676,8 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
         <p>Local Mode keeps categories, budgets, and transactions on your phone. If you sign in with Google or Apple and agree to Cloud Sync, that data backs up to your account. Contacts, if you allow them, never leave the device.</p>
       </details>
       <details>
-        <summary>What happens when I join the waitlist?</summary>
-        <p>We save the email you submit and send one note to confirm you are on the list. When Fundt is on the App Store, we email you again. You can unsubscribe any time. That is it.</p>
-      </details>
-      <details>
-        <summary>Is Fundt on the App Store yet?</summary>
-        <p>Not yet. The waitlist is how you hear when it ships. We will not name a date until it is actually ready to download.</p>
+        <summary>How do I get Fundt?</summary>
+        <p>Fundt is free on the App Store for iOS. The download button opens the Rwanda listing directly. Android is coming soon.</p>
       </details>
       <details>
         <summary>Can I export my history?</summary>
