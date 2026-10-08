@@ -581,7 +581,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       <div class="store-row">
         <div>
           <a class="store-badge" href="https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" width="162" height="54" alt="Download on the App Store" />
+            <img src="../assets/app-store-badge.svg" width="162" height="54" alt="Download on the App Store" />
           </a>
           <p class="store-note">Free on iOS.</p>
         </div>
