@@ -439,7 +439,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     skill: "taste",
     id: "taste-month",
     tab: "Month",
-    title: "fundt.app: MoMo Expense Tracker",
+    title: "fundt.app: Expense Tracker",
     contract: `THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
 STORY: See History total + top 5 → clear month. Download opens the Rwanda App Store listing.
