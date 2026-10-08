@@ -439,7 +439,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
     skill: "taste",
     id: "taste-month",
     tab: "Month",
-    title: "Fundt · App",
+    title: "fundt.app: MoMo Expense Tracker",
     contract: `THESIS: Month-end is clear when History shows the total and top category spend. Refuse abstract hero art.
 OWN-WORLD: Deep night #101318; app History surface #111116 with hatched trend bars (FundtTokens), Nunito 500/700.
 STORY: See History total + top 5 → clear month. Download opens the Rwanda App Store listing.
@@ -580,8 +580,8 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       <p class="hero-sub">Capture every transfer. Organize by category. Stay on budget without the homework.</p>
       <div class="store-row">
         <div>
-          <a class="store-badge" href="https://apps.apple.com/rw/app/fundt/id6785270946">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" width="162" height="54" alt="Download on the App Store" />
+          <a class="store-badge" href="https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946">
+            <img src="../assets/app-store-badge.svg" width="162" height="54" alt="Download on the App Store" />
           </a>
           <p class="store-note">Free on iOS.</p>
         </div>

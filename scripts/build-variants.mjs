@@ -34,6 +34,7 @@ function shell({
   <title>${title}</title>
   <meta name="description" content="Know where your MoMo went. Capture, organize, and budget with Fundt." />
   <link rel="icon" type="image/png" href="${favicon}" />
+  <link rel="preload" as="image" href="${assetPrefix}app-store-badge.svg" type="image/svg+xml" />
   ${FONT}
   <link rel="stylesheet" href="${css}" />
 </head>

@@ -1,0 +1,10 @@
+# GitHub Pages runs Jekyll when .nojekyll is absent.
+# Keep local source files in git, but do not publish them.
+# variants/taste-month.css stays published: index.html and privacy.html link to it.
+exclude:
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - scripts
+  - variants/taste-month.html
+  - variants/manifest.json
