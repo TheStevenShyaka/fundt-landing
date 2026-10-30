@@ -25,18 +25,18 @@ export const SITE = {
     path: "assets/og-image.png",
     width: 1200,
     height: 630,
-    alt: "Fundt app on an iPhone showing a month of MoMo spending sorted by category",
+    alt: "Fundt expense tracker on an iPhone showing a month of spending sorted by category",
   },
   screenshots: ["assets/screens/fundt-home.png", "assets/screens/fundt-categories.png", "assets/screens/fundt-history.png"],
 
   home: {
     // ~50-60 chars: brand first, then the searches we want to win.
-    title: "Fundt: MoMo Expense Tracker & Budget App for Rwanda",
+    title: "Fundt: Expense Tracker & Budget App",
     // ~150-160 chars: what it is, who it is for, the action.
     description:
-      "Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.",
-    ogTitle: "Fundt: Know where your MoMo went",
-    ogDescription: "Capture every transfer. Organize by category. Stay on budget without the homework. Free on iOS.",
+      "Fundt is a free expense tracker and budget app. Log a spend, pick a category and stay on your monthly budget. Works with MTN MoMo in Rwanda today.",
+    ogTitle: "Fundt: Expense Tracker",
+    ogDescription: "Know where your money went. Log a spend, pick a category, stay on budget. MTN MoMo supported today.",
   },
 
   privacy: {
@@ -45,7 +45,7 @@ export const SITE = {
   },
 
   features: [
-    "Log MTN MoMo spending and transfers",
+    "Log spending and MTN MoMo transfers",
     "Organize spending into categories you choose",
     "Monthly budgets per category with alerts at 70%, almost full and over",
     "MoMo SMS capture and confirmation of payments started in the app",

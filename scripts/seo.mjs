@@ -212,7 +212,7 @@ export function llmsTxt(faq) {
 
 > ${SITE.home.description}
 
-Fundt is a personal budgeting app for people in Rwanda whose money moves on MTN MoMo. It is free on the App Store for iOS. Android is coming soon. Fundt never processes payments and never sees your MoMo PIN or balance.
+Fundt is a personal budgeting and expense tracking app. It works with MTN MoMo in Rwanda today. It is free on the App Store for iOS. Android is coming soon. Fundt never processes payments and never sees your MoMo PIN or balance.
 
 ## What it does
 ${SITE.features.map((f) => `- ${f}`).join("\n")}

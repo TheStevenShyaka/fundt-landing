@@ -1,7 +1,7 @@
 {
   "name": "Fundt: Expense Tracker",
   "short_name": "Fundt",
-  "description": "Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.",
+  "description": "Fundt is a free expense tracker and budget app. Log a spend, pick a category and stay on your monthly budget. Works with MTN MoMo in Rwanda today.",
   "start_url": "/",
   "scope": "/",
   "display": "browser",

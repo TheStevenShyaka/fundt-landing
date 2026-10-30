@@ -1,11 +1,11 @@
 # Fundt
 
-> Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.
+> Fundt is a free expense tracker and budget app. Log a spend, pick a category and stay on your monthly budget. Works with MTN MoMo in Rwanda today.
 
-Fundt is a personal budgeting app for people in Rwanda whose money moves on MTN MoMo. It is free on the App Store for iOS. Android is coming soon. Fundt never processes payments and never sees your MoMo PIN or balance.
+Fundt is a personal budgeting and expense tracking app. It works with MTN MoMo in Rwanda today. It is free on the App Store for iOS. Android is coming soon. Fundt never processes payments and never sees your MoMo PIN or balance.
 
 ## What it does
-- Log MTN MoMo spending and transfers
+- Log spending and MTN MoMo transfers
 - Organize spending into categories you choose
 - Monthly budgets per category with alerts at 70%, almost full and over
 - MoMo SMS capture and confirmation of payments started in the app
