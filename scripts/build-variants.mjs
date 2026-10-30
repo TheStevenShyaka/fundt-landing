@@ -23,6 +23,7 @@ function shell({
   assetPrefix = "../assets/",
   cssHref,
   scriptSrc = "../shared/waitlist.js",
+  phoneBase = "../shared/",
 }) {
   const favicon = `${assetPrefix}favicon.png`;
   const css = cssHref ?? `${id}.css`;
@@ -39,6 +40,7 @@ function shell({
   <link rel="preload" as="image" href="${assetPrefix}app-store-badge.svg" type="image/svg+xml" />
   ${FONT}
   <link rel="stylesheet" href="${css}" />
+  <link rel="stylesheet" href="${phoneBase}fundt-phone.css" />
 </head>
 <body class="variant-${id}">
 <!--
@@ -46,6 +48,7 @@ ${contract}
 -->
 ${body}
 <script src="${scriptSrc}"></script>
+<script src="${phoneBase}fundt-phone.js"></script>
 </body>
 </html>
 `;
@@ -81,6 +84,7 @@ for (const v of all) {
         assetPrefix: "assets/",
         cssHref: `variants/${v.id}.css`,
         scriptSrc: "shared/waitlist.js",
+        phoneBase: "shared/",
       })
     );
     console.log("wrote", "index.html");
