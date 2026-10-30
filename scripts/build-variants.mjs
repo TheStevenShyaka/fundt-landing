@@ -32,7 +32,9 @@ function shell({
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${title}</title>
-  <meta name="description" content="Know where your MoMo went. Capture, organize, and budget with Fundt." />
+  <meta name="description" content="Fundt is a free expense tracker. Log a spend, pick a category, and stay on your monthly budget. Works with MTN MoMo in Rwanda today. Free on the App Store." />
+  <meta property="og:title" content="${title}" />
+  <meta property="og:description" content="Know where your money went. Log a spend, pick a category, stay on budget. MTN MoMo supported today." />
   <link rel="icon" type="image/png" href="${favicon}" />
   <link rel="preload" as="image" href="${assetPrefix}app-store-badge.svg" type="image/svg+xml" />
   ${FONT}
