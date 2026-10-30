@@ -28,7 +28,7 @@ const waitlist = () => `
 const siteFooter = (assetPrefix = "../assets/") => `
 <footer class="footer">
   <div class="footer-inner">
-    <a class="brand" href="/"><img src="${assetPrefix}icon.png" alt="" />Fundt</a>
+    <a class="brand" href="/"><img src="${assetPrefix}icon-96.png" alt="" />Fundt</a>
     <p class="footer-copy">&copy; <span data-year></span> Fundt. All rights reserved.</p>
     <div class="footer-socials">
       <a
@@ -111,7 +111,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden}
 `,
     body: `
 <header class="nav">
-  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="brand" href="#top"><img src="../assets/icon-96.png" alt="" />Fundt</a>
   <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
@@ -208,7 +208,7 @@ body{overflow:hidden}
 .mini-foot a{text-decoration:underline}
 `,
     body: `
-<a class="brand-fixed" href="#waitlist"><img src="../assets/icon.png" alt="" />Fundt</a>
+<a class="brand-fixed" href="#waitlist"><img src="../assets/icon-96.png" alt="" />Fundt</a>
 <a class="skip" href="#waitlist">Join the waitlist ↓</a>
 <main class="film" id="top">
   <section class="frame f1"><span class="word">WHERE</span><p class="foot-note">Rent went out. Airtime went out. Something at midnight went out.</p></section>
@@ -218,7 +218,7 @@ body{overflow:hidden}
   <section class="frame f5"><span class="word">GO?</span><p class="foot-note">You ask this every month. The answer already exists.</p></section>
   <section class="frame f6" id="waitlist">
     <div class="final">
-      <img src="../assets/icon.png" alt="Fundt" />
+      <img src="../assets/icon-96.png" alt="Fundt" />
       <h1>Fundt knows.</h1>
       <p>It reads the MoMo messages already on your phone and sorts your month into a picture. On device. Never sold. Zero homework.</p>
       <form class="waitlist-form" novalidate>
@@ -290,7 +290,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 `,
     body: `
 <header class="nav">
-  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="brand" href="#top"><img src="../assets/icon-96.png" alt="" />Fundt</a>
   <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
@@ -391,7 +391,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.5}
 `,
     body: `
 <header class="nav">
-  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="brand" href="#top"><img src="../assets/icon-96.png" alt="" />Fundt</a>
   <a class="link" href="/privacy">Privacy</a>
 </header>
 <main id="top">
@@ -466,6 +466,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero-visual [data-fundt-phone]:not(.fp){position:relative;width:312px;max-width:100%}
 .hero-mock{width:312px;max-width:100%;height:auto}
 @keyframes heroFloatOpp{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .hero-hint{position:absolute;left:50%;top:calc(100dvh - 76px - 56px - env(safe-area-inset-bottom,0px));z-index:3;translate:-50% 0;display:grid;place-items:center;width:44px;height:44px;color:var(--muted);animation:heroFloatOpp 5s ease-in-out infinite}
 .hero-hint svg{width:22px;height:22px}
 .hero-hint:hover{color:var(--ink)}
@@ -567,8 +568,9 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 `,
     body: `
 <header class="nav">
-  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" />Fundt</a>
+  <a class="brand" href="#top"><img src="../assets/icon-96.png" alt="" />Fundt</a>
   <div class="nav-links">
+    <a class="link" href="#faq">FAQ</a>
     <a class="link" href="/privacy">Privacy</a>
   </div>
 </header>
@@ -610,6 +612,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
     </a>
   </section>
   <section class="claims" id="claims">
+    <h2 class="sr-only">How Fundt works</h2>
     <div class="claim">
       <h3>Capture, don't auto-sort</h3>
       <p>MoMo SMS logs the payment. It does not pick Transport or Groceries for you. You categorize untracked items.</p>
@@ -663,6 +666,14 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       <details open>
         <summary>What is Fundt?</summary>
         <p>Fundt is a personal budgeting app for people whose money moves on MTN MoMo. It helps you capture transfers, organize them by category, and stay on a monthly budget without turning it into homework.</p>
+      </details>
+      <details>
+        <summary>Is Fundt free?</summary>
+        <p>Yes. Fundt is free on the App Store for iOS.</p>
+      </details>
+      <details>
+        <summary>Do I need an account to use Fundt?</summary>
+        <p>No. Local Mode works without signing in and keeps your data on your phone. Sign in with Google or Apple only if you want Cloud Sync backup.</p>
       </details>
       <details>
         <summary>Does Fundt sort my MoMo automatically?</summary>

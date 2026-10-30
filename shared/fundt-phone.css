@@ -69,14 +69,15 @@
 .fp-scale { position: absolute; left: 0; top: 0; width: 417px; height: 876px; transform: scale(var(--fp-s)); transform-origin: 0 0; }
 .fp-device {
   position: relative; width: 417px; height: 876px; padding: 12px; border-radius: 64px;
-  background: linear-gradient(150deg, #54545b 0%, #1d1d21 22%, #0c0c0e 55%, #2e2e34 100%);
+  background: linear-gradient(150deg, #6a6a72 0%, #26262b 24%, #0f0f12 55%, #3a3a41 100%);
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
-    inset 0 0 0 4.5px #0a0a0c,
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
     0 0 0 1px #000,
     0 50px 100px -30px rgba(0, 0, 0, 0.75),
     0 0 120px rgba(0, 144, 255, 0.12);
 }
+/* Thin titanium edge, then a black bezel that the screen sits in (concentric radii: 64 -> 60.5 -> 52). */
+.fp-device::before { content: ""; position: absolute; inset: 3.5px; border-radius: 60.5px; background: #050507; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05); }
 .fp-btn { position: absolute; width: 4px; background: linear-gradient(90deg, #1c1c20, #3a3a40); border-radius: 2px; }
 .fp-btn-l1 { left: -3px; top: 132px; height: 30px; }
 .fp-btn-l2 { left: -3px; top: 196px; height: 58px; }
@@ -127,9 +128,9 @@
 .fp-hdr-r { display: flex; align-items: center; gap: 8px; }
 .fp-bell { position: relative; width: 44px; height: 44px; border-radius: 22px; font-size: 22px; color: var(--bright); }
 .fp-badge { position: absolute; top: -2px; right: -2px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--red); border: 2px solid var(--page); color: #fff; font-size: 10px; line-height: 14px; font-weight: 700; display: grid; place-items: center; }
-.fp-avatar { width: 44px; height: 44px; border-radius: 22px; background: #7c3aed; color: rgba(255, 255, 255, 0.92); display: grid; place-items: center; font-size: 26px; overflow: hidden; padding-top: 6px; }
-.fp-avatar .fp-i { margin-top: 2px; }
-.fp-avatar-l { width: 72px; height: 72px; border-radius: 36px; font-size: 44px; }
+.fp-avatar { width: 44px; height: 44px; border-radius: 22px; background: #8f8be6; overflow: hidden; display: block; flex: none; }
+.fp-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; max-width: none; }
+.fp-avatar-l { width: 72px; height: 72px; border-radius: 36px; }
 
 /* ------------------------------------------------------------------ */
 /* Tab bar                                                             */
