@@ -396,12 +396,12 @@
       const wsLabel = S.workspace === "personal" ? "Personal funds" : "Shared funds";
       return `<header class="fp-hdr fp-hdr-home">
         <button class="fp-ws" data-act="workspace" aria-label="Select workspace, ${wsLabel}">
-          <span class="fp-logo"><img src="${ASSETS}icon.png" alt="" width="36" height="36" draggable="false"></span>
+          <span class="fp-logo"><img src="${ASSETS}icon-96.png" alt="" width="36" height="36" draggable="false"></span>
           <span class="fp-ws-t"><b>Fundt</b><span class="fp-ws-s">${wsLabel}${I.updown}</span></span>
         </button>
         <div class="fp-hdr-r">
           <button class="fp-glass fp-bell" data-act="bell" aria-label="Notifications${n ? `, ${n} uncategorized` : ""}">${I.bell}${n ? `<i class="fp-badge">${n > 99 ? "99+" : n}</i>` : ""}</button>
-          <button class="fp-avatar" data-act="avatar" aria-label="Open profile">${I.person}</button>
+          <button class="fp-avatar" data-act="avatar" aria-label="Open profile"><img src="${ASSETS}default-avatar.png" alt="" width="44" height="44" draggable="false"></button>
         </div>
       </header>`;
     }
@@ -703,7 +703,7 @@
   function renderProfile() {
     return `${stackHeader("Profile")}
     <div class="fp-scroll"><div class="fp-pad-b fp-profile">
-      <div class="fp-prof-hero"><span class="fp-avatar fp-avatar-l">${I.person}</span><b>Guest</b><span>Local Mode</span></div>
+      <div class="fp-prof-hero"><span class="fp-avatar fp-avatar-l"><img src="${ASSETS}default-avatar.png" alt="" width="72" height="72" draggable="false"></span><b>Guest</b><span>Local Mode</span></div>
       <div class="fp-inset"><div class="fp-info"><span class="fp-info-i">${I.lock}</span><p><b>Your data stays on this phone.</b> Categories, budgets and transactions are processed on-device. Cloud Sync is optional and off.</p></div></div>
       <h3 class="fp-grp">Privacy &amp; data</h3>
       <div class="fp-inset"><div class="fp-group">

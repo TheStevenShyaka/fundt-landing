@@ -3,59 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>fundt.app: MoMo Expense Tracker</title>
-  <meta name="description" content="Fundt is a free expense tracker for MTN MoMo in Rwanda. Log a spend, pick a category, and see your monthly budget. Free on the App Store." />
+  <title>Fundt: MoMo Expense Tracker &amp; Budget App for Rwanda</title>
+  <meta name="description" content="Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://fundt.app/" />
+  <link rel="alternate" hreflang="en" href="https://fundt.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://fundt.app/" />
+  <meta name="application-name" content="Fundt" />
+  <meta name="apple-mobile-web-app-title" content="Fundt" />
+  <meta name="theme-color" content="#101318" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-itunes-app" content="app-id=6785270946" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Fundt" />
-  <meta property="og:title" content="fundt.app: MoMo Expense Tracker" />
-  <meta property="og:description" content="Know where your MoMo went. Log a spend, pick a category, stay on budget." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:title" content="Fundt: Know where your MoMo went" />
+  <meta property="og:description" content="Capture every transfer. Organize by category. Stay on budget without the homework. Free on iOS." />
   <meta property="og:url" content="https://fundt.app/" />
-  <meta property="og:image" content="https://fundt.app/assets/hero-iphone.png" />
+  <meta property="og:image" content="https://fundt.app/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Fundt app on an iPhone showing a month of MoMo spending sorted by category" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="twitter:title" content="Fundt: Know where your MoMo went" />
+  <meta name="twitter:description" content="Capture every transfer. Organize by category. Stay on budget without the homework. Free on iOS." />
+  <meta name="twitter:image" content="https://fundt.app/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Fundt app on an iPhone showing a month of MoMo spending sorted by category" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="48x48" />
+  <link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preload" as="image" href="assets/app-store-badge.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="variants/taste-month.css" />
   <link rel="stylesheet" href="shared/fundt-phone.css" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://fundt.app/#website",
-        "name": "Fundt",
-        "alternateName": ["Fundt app", "fundt.app"],
-        "url": "https://fundt.app/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fundt.app/#org",
+      "name": "Fundt",
+      "url": "https://fundt.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://fundt.app/assets/icon-512.png",
+        "width": 512,
+        "height": 512
       },
-      {
-        "@type": "Organization",
-        "@id": "https://fundt.app/#org",
-        "name": "Fundt",
-        "url": "https://fundt.app/",
-        "logo": "https://fundt.app/assets/icon.png",
-        "email": "support@fundt.app",
-        "sameAs": [
-          "https://www.instagram.com/buildingfundt.app",
-          "https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946"
-        ]
+      "email": "support@fundt.app",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Rwanda"
       },
-      {
-        "@type": "MobileApplication",
-        "name": "Fundt: Expense Tracker",
-        "operatingSystem": "iOS",
-        "applicationCategory": "FinanceApplication",
-        "offers": {
-          "@type": "Offer",
-          "price": 0,
-          "priceCurrency": "USD"
-        },
-        "installUrl": "https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946",
-        "publisher": { "@id": "https://fundt.app/#org" }
+      "sameAs": [
+        "https://www.instagram.com/buildingfundt.app",
+        "https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fundt.app/#website",
+      "name": "Fundt",
+      "alternateName": [
+        "Fundt app",
+        "fundt.app"
+      ],
+      "url": "https://fundt.app/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://fundt.app/#org"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://fundt.app/#webpage",
+      "url": "https://fundt.app/",
+      "name": "Fundt: MoMo Expense Tracker & Budget App for Rwanda",
+      "description": "Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://fundt.app/#website"
+      },
+      "about": {
+        "@id": "https://fundt.app/#app"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://fundt.app/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://fundt.app/#app",
+      "name": "Fundt: Expense Tracker",
+      "alternateName": "Fundt",
+      "description": "Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FinanceApplication",
+      "inLanguage": "en",
+      "countriesSupported": "RW",
+      "featureList": [
+        "Log MTN MoMo spending and transfers",
+        "Organize spending into categories you choose",
+        "Monthly budgets per category with alerts at 70%, almost full and over",
+        "MoMo SMS capture and confirmation of payments started in the app",
+        "Local Mode keeps data on your phone; optional Cloud Sync backup",
+        "CSV export of your history"
+      ],
+      "image": "https://fundt.app/assets/icon-512.png",
+      "screenshot": [
+        "https://fundt.app/assets/screens/fundt-home.png",
+        "https://fundt.app/assets/screens/fundt-categories.png",
+        "https://fundt.app/assets/screens/fundt-history.png"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      },
+      "installUrl": "https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946",
+      "downloadUrl": "https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946",
+      "url": "https://fundt.app/",
+      "publisher": {
+        "@id": "https://fundt.app/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://fundt.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Fundt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fundt is a personal budgeting app for people whose money moves on MTN MoMo. It helps you capture transfers, organize them by category, and stay on a monthly budget without turning it into homework."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Fundt free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Fundt is free on the App Store for iOS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account to use Fundt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Local Mode works without signing in and keeps your data on your phone. Sign in with Google or Apple only if you want Cloud Sync backup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Fundt sort my MoMo automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A MoMo SMS can log that money moved. It does not pick Transport or Groceries for you. You categorize untracked items when you are ready."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Fundt see my MoMo PIN or balance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Fundt never processes payments and never sees your PIN or balance. You complete transfers in MoMo yourself. Fundt only saves what you choose to record."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does my data live?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Local Mode keeps categories, budgets, and transactions on your phone. If you sign in with Google or Apple and agree to Cloud Sync, that data backs up to your account. Contacts, if you allow them, never leave the device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get Fundt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fundt is free on the App Store for iOS. The download button opens the Rwanda listing directly. Android is coming soon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export my history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. When you are in the app, open Privacy & data from Profile and tap Download my data. You get a CSV you can keep or share."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why would Fundt ask for contacts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only to help you pick a recipient faster. Contacts stay on your phone. They are never uploaded."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="variant-taste-month">
@@ -69,8 +229,9 @@ FORM: Taste / Month. V7 M7 D3.
 -->
 
 <header class="nav">
-  <a class="brand" href="#top"><img src="assets/icon.png" alt="" />Fundt</a>
+  <a class="brand" href="#top"><img src="assets/icon-96.png" alt="" />Fundt</a>
   <div class="nav-links">
+    <a class="link" href="#faq">FAQ</a>
     <a class="link" href="/privacy">Privacy</a>
   </div>
 </header>
@@ -112,6 +273,7 @@ FORM: Taste / Month. V7 M7 D3.
     </a>
   </section>
   <section class="claims" id="claims">
+    <h2 class="sr-only">How Fundt works</h2>
     <div class="claim">
       <h3>Capture, don't auto-sort</h3>
       <p>MoMo SMS logs the payment. It does not pick Transport or Groceries for you. You categorize untracked items.</p>
@@ -167,6 +329,14 @@ FORM: Taste / Month. V7 M7 D3.
         <p>Fundt is a personal budgeting app for people whose money moves on MTN MoMo. It helps you capture transfers, organize them by category, and stay on a monthly budget without turning it into homework.</p>
       </details>
       <details>
+        <summary>Is Fundt free?</summary>
+        <p>Yes. Fundt is free on the App Store for iOS.</p>
+      </details>
+      <details>
+        <summary>Do I need an account to use Fundt?</summary>
+        <p>No. Local Mode works without signing in and keeps your data on your phone. Sign in with Google or Apple only if you want Cloud Sync backup.</p>
+      </details>
+      <details>
         <summary>Does Fundt sort my MoMo automatically?</summary>
         <p>No. A MoMo SMS can log that money moved. It does not pick Transport or Groceries for you. You categorize untracked items when you are ready.</p>
       </details>
@@ -196,7 +366,7 @@ FORM: Taste / Month. V7 M7 D3.
 
 <footer class="footer">
   <div class="footer-inner">
-    <a class="brand" href="/"><img src="assets/icon.png" alt="" />Fundt</a>
+    <a class="brand" href="/"><img src="assets/icon-96.png" alt="" />Fundt</a>
     <p class="footer-copy">&copy; <span data-year></span> Fundt. All rights reserved.</p>
     <div class="footer-socials">
       <a

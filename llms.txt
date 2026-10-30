@@ -1,0 +1,47 @@
+# Fundt
+
+> Free expense tracker and budget app for MTN MoMo in Rwanda. Log every transfer, sort spending by category and stay on your monthly budget.
+
+Fundt is a personal budgeting app for people in Rwanda whose money moves on MTN MoMo. It is free on the App Store for iOS. Android is coming soon. Fundt never processes payments and never sees your MoMo PIN or balance.
+
+## What it does
+- Log MTN MoMo spending and transfers
+- Organize spending into categories you choose
+- Monthly budgets per category with alerts at 70%, almost full and over
+- MoMo SMS capture and confirmation of payments started in the app
+- Local Mode keeps data on your phone; optional Cloud Sync backup
+- CSV export of your history
+
+## Links
+- [Home](https://fundt.app/): overview and live demo
+- [Download on the App Store](https://apps.apple.com/rw/app/fundt-expense-tracker/id6785270946)
+- [Privacy Policy](https://fundt.app/privacy)
+- Support: support@fundt.app
+
+## FAQ
+### What is Fundt?
+Fundt is a personal budgeting app for people whose money moves on MTN MoMo. It helps you capture transfers, organize them by category, and stay on a monthly budget without turning it into homework.
+
+### Is Fundt free?
+Yes. Fundt is free on the App Store for iOS.
+
+### Do I need an account to use Fundt?
+No. Local Mode works without signing in and keeps your data on your phone. Sign in with Google or Apple only if you want Cloud Sync backup.
+
+### Does Fundt sort my MoMo automatically?
+No. A MoMo SMS can log that money moved. It does not pick Transport or Groceries for you. You categorize untracked items when you are ready.
+
+### Does Fundt see my MoMo PIN or balance?
+No. Fundt never processes payments and never sees your PIN or balance. You complete transfers in MoMo yourself. Fundt only saves what you choose to record.
+
+### Where does my data live?
+Local Mode keeps categories, budgets, and transactions on your phone. If you sign in with Google or Apple and agree to Cloud Sync, that data backs up to your account. Contacts, if you allow them, never leave the device.
+
+### How do I get Fundt?
+Fundt is free on the App Store for iOS. The download button opens the Rwanda listing directly. Android is coming soon.
+
+### Can I export my history?
+Yes. When you are in the app, open Privacy & data from Profile and tap Download my data. You get a CSV you can keep or share.
+
+### Why would Fundt ask for contacts?
+Only to help you pick a recipient faster. Contacts stay on your phone. They are never uploaded.
