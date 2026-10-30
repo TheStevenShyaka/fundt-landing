@@ -30,6 +30,12 @@ node scripts/build-variants.mjs
 
 Definitions live in `scripts/variant-defs.mjs`. Older concept defs may remain in that file (and `scripts/variant-defs-imp.mjs`) but `KEEP` in `scripts/build-variants.mjs` only emits **taste-month** (plus root `index.html`).
 
+## Interactive phone
+
+The hero phone is a working replica of the app, in `shared/fundt-phone.js` + `shared/fundt-phone.css` (vanilla, no build step). Mount point: `<div data-fundt-phone data-assets="assets/">`; the static `hero-iphone.png` inside it is the no-JS fallback and the og:image.
+
+It runs entirely on fake in-memory data (reload resets). "Today" is pinned to the 24th of the visitor's month so the month is always populated. Layout values are in app points (393x852) lifted from the `fundt` repo (`theme/tokens.ts`, `HistoryRevampRow`, `CategoryCardFace`, `GlassTabBar`, ...) and scaled to fit. When the app UI changes, update the matching section in those two files.
+
 ## Collecting emails
 
 The live form posts to the Loops form endpoint in `shared/waitlist.js` (urlencoded `email`, plus `source` and `userGroup`). That URL is public on purpose. Do not put a Loops API key in this repo.

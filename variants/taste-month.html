@@ -9,6 +9,7 @@
   <link rel="preload" as="image" href="../assets/app-store-badge.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="taste-month.css" />
+  <link rel="stylesheet" href="../shared/fundt-phone.css" />
 </head>
 <body class="variant-taste-month">
 <!--
@@ -47,13 +48,15 @@ FORM: Taste / Month. V7 M7 D3.
       </div>
     </div>
     <div class="hero-visual">
-      <img
-        class="hero-mock"
-        src="../assets/hero-iphone.png"
-        width="312"
-        height="657"
-        alt="Fundt History on iPhone"
-      />
+      <div data-fundt-phone data-assets="../assets/">
+        <img
+          class="hero-mock"
+          src="../assets/hero-iphone.png"
+          width="312"
+          height="657"
+          alt="Fundt History on iPhone"
+        />
+      </div>
     </div>
     <a class="hero-hint" href="#claims" aria-label="Scroll for more">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -166,5 +169,6 @@ FORM: Taste / Month. V7 M7 D3.
   </div>
 </footer>
 <script src="../shared/waitlist.js"></script>
+<script src="../shared/fundt-phone.js"></script>
 </body>
 </html>

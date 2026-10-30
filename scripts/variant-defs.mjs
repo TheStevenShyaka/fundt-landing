@@ -460,11 +460,12 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero h1 em{font-style:normal;color:var(--accent)}
 .hero-copy{min-width:0}
 .hero-sub{margin-top:18px;color:var(--muted);font-size:1.08rem;max-width:38ch}
-.hero-visual{position:relative;align-self:stretch;min-height:640px;overflow:hidden}
-.hero-mock{position:absolute;left:50%;top:64px;width:312px;max-width:none;height:auto;translate:-50% 0;pointer-events:none;animation:heroFloat 5s ease-in-out infinite}
-@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+/* Interactive phone (shared/fundt-phone.{css,js}). The static PNG stays as the no-JS fallback. */
+.hero-visual{position:relative;align-self:center;display:flex;justify-content:center;min-width:0;padding-bottom:40px}
+.hero-visual::before{content:"";position:absolute;inset:6% 0 10%;pointer-events:none;background:radial-gradient(closest-side,rgba(0,144,255,.16),rgba(0,144,255,0) 72%)}
+.hero-visual [data-fundt-phone]:not(.fp){position:relative;width:312px;max-width:100%}
+.hero-mock{width:312px;max-width:100%;height:auto}
 @keyframes heroFloatOpp{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
-.hero-visual::after{content:"";position:absolute;left:-16px;right:-16px;bottom:0;z-index:1;height:208px;pointer-events:none;background:linear-gradient(180deg,transparent 0%,var(--bg) 88%)}
 .hero-hint{position:absolute;left:50%;top:calc(100dvh - 76px - 56px - env(safe-area-inset-bottom,0px));z-index:3;translate:-50% 0;display:grid;place-items:center;width:44px;height:44px;color:var(--muted);animation:heroFloatOpp 5s ease-in-out infinite}
 .hero-hint svg{width:22px;height:22px}
 .hero-hint:hover{color:var(--ink)}
@@ -557,9 +558,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero .waitlist-form{flex-direction:column;align-items:stretch;gap:12px;margin-top:28px}
 .hero .waitlist-input{min-width:0;width:100%}
 .hero .btn{width:100%}
-.hero-visual{min-height:0;height:min(58vh,500px);margin:0}
-.hero-mock{top:28px;width:min(70%,268px)}
-.hero-visual::after{height:160px}
+.hero-visual{padding-bottom:40px;margin:0}
 .claims{grid-template-columns:1fr}
 .faq{grid-template-columns:1fr;gap:18px}
 .footer-inner{grid-template-columns:1fr;justify-items:center;gap:12px}
@@ -594,13 +593,15 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       </div>
     </div>
     <div class="hero-visual">
-      <img
-        class="hero-mock"
-        src="../assets/hero-iphone.png"
-        width="312"
-        height="657"
-        alt="Fundt History on iPhone"
-      />
+      <div data-fundt-phone data-assets="../assets/">
+        <img
+          class="hero-mock"
+          src="../assets/hero-iphone.png"
+          width="312"
+          height="657"
+          alt="Fundt History on iPhone"
+        />
+      </div>
     </div>
     <a class="hero-hint" href="#claims" aria-label="Scroll for more">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
