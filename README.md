@@ -36,6 +36,8 @@ The hero phone is a working replica of the app, in `shared/fundt-phone.js` + `sh
 
 It runs entirely on fake in-memory data (reload resets). "Today" is pinned to the 24th of the visitor's month so the month is always populated. Layout values are in app points (393x852) lifted from the `fundt` repo (`theme/tokens.ts`, `HistoryRevampRow`, `CategoryCardFace`, `GlassTabBar`, ...) and scaled to fit. When the app UI changes, update the matching section in those two files.
 
+The hand-drawn note beside the phone reads its copy from `data-hint` (first message) and `data-hint-next` (shown after the first tap, until Send is opened) on the mount in `scripts/variant-defs.mjs`. Change the words there and rebuild.
+
 ## SEO
 
 Everything search engines and link previews read is generated, so it cannot drift:
