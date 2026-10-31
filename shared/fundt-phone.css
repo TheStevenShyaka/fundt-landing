@@ -96,7 +96,34 @@
 .fp-wifi { width: 17px; height: 12px; fill: #fff; }
 .fp-bat { width: 27px; height: 13px; fill: #fff; color: #fff; }
 
-.fp-caption { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 14px; white-space: nowrap; font-size: 13px; color: var(--muted, rgba(240,240,245,.55)); letter-spacing: 0.01em; }
+/* "Try me" note: left of the phone, arrow into the tab bar. Above the phone on narrow screens. */
+.fp-nudge {
+  position: absolute; z-index: 2; right: 100%; bottom: 9%; margin-right: 10px; width: 176px;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 0; pointer-events: none;
+  color: #f2f4f7; transition: opacity 0.45s ease, translate 0.45s ease;
+  animation: fp-nudge-in 0.6s 1.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.fp-nudge-t { display: block; font-size: 16px; line-height: 21px; font-weight: 700; letter-spacing: -0.01em; text-align: right; text-wrap: balance; transform: rotate(-4deg); transform-origin: right bottom; transition: opacity 0.2s ease, translate 0.2s ease; }
+.fp-nudge.swap .fp-nudge-t { opacity: 0; translate: 0 4px; }
+.fp-nudge-aw { display: block; margin-right: -16px; animation: fp-poke 2.8s 3s ease-in-out infinite; }
+.fp-nudge-a { display: block; width: 92px; height: 58px; overflow: visible; color: var(--accent); }
+.fp-nudge-a path { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 220; animation: fp-draw 0.9s 1.7s ease-out both; }
+.fp-nudge-a path + path { animation-delay: 2.45s; animation-duration: 0.25s; }
+.fp-nudge[data-step="done"] { animation: none; opacity: 0; translate: -10px 0; }
+.fp-nudge[data-step="done"] .fp-nudge-aw { animation: none; }
+@keyframes fp-nudge-in { from { opacity: 0; translate: -10px 0; } to { opacity: 1; translate: 0 0; } }
+@keyframes fp-draw { from { stroke-dashoffset: 220; } to { stroke-dashoffset: 0; } }
+@keyframes fp-poke { 0%, 62%, 100% { transform: translate(0, 0); } 76% { transform: translate(5px, 3px); } }
+@media (min-width: 901px) and (max-height: 760px) {
+  .fp-nudge { bottom: 16%; }
+}
+@media (max-width: 900px) {
+  .fp-nudge { right: auto; left: 0; bottom: 100%; width: 100%; margin: 0; align-items: center; }
+  .fp-nudge-t { text-align: center; transform: rotate(-3deg); transform-origin: center; }
+  .fp-nudge-aw { width: 54px; height: 58px; margin: 0 0 -8px 72px; display: grid; place-items: center; } /* room for the rotated arrow */
+  .fp-nudge-a { width: 54px; height: 34px; transform: rotate(74deg); }
+  .fp-nudge[data-step="done"] { translate: 0 -8px; }
+}
 
 /* ------------------------------------------------------------------ */
 /* Views + shared chrome                                               */

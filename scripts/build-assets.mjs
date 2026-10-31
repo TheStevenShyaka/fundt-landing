@@ -32,7 +32,7 @@ const shots = await browser.newPage({ viewport: { width: 1200, height: 1100 }, d
 await shots.goto(`${base}/index.html`, { waitUntil: "networkidle" });
 await shots.waitForSelector(".fp-screen");
 // Transparent page so the phone's rounded corners are not boxed in by the page background.
-await shots.addStyleTag({ content: "html,body,.hero,.hero-visual{background:transparent!important}.hero-visual::before{display:none!important}.fp-caption{display:none!important}" });
+await shots.addStyleTag({ content: "html,body,.hero,.hero-visual{background:transparent!important}.hero-visual::before{display:none!important}.fp-nudge{display:none!important}" });
 for (const tab of ["home", "categories", "history"]) {
   await shots.click(`.fp-tab[data-tab="${tab}"]`);
   await shots.waitForTimeout(2000);

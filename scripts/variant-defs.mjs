@@ -461,7 +461,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero-copy{min-width:0}
 .hero-sub{margin-top:18px;color:var(--muted);font-size:1.08rem;max-width:38ch}
 /* Interactive phone (shared/fundt-phone.{css,js}). The static PNG stays as the no-JS fallback. */
-.hero-visual{position:relative;align-self:center;display:flex;justify-content:center;min-width:0;padding-bottom:40px}
+.hero-visual{position:relative;align-self:center;display:flex;justify-content:center;min-width:0;padding-bottom:24px}
 .hero-visual::before{content:"";position:absolute;inset:6% 0 10%;pointer-events:none;background:radial-gradient(closest-side,rgba(0,144,255,.16),rgba(0,144,255,0) 72%)}
 .hero-visual [data-fundt-phone]:not(.fp){position:relative;width:312px;max-width:100%}
 .hero-mock{width:312px;max-width:100%;height:auto}
@@ -559,7 +559,8 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
 .hero .waitlist-form{flex-direction:column;align-items:stretch;gap:12px;margin-top:28px}
 .hero .waitlist-input{min-width:0;width:100%}
 .hero .btn{width:100%}
-.hero-visual{padding-bottom:40px;margin:0}
+.hero-visual{padding:100px 0 24px;margin:0}
+.hero-hint{display:none}
 .claims{grid-template-columns:1fr}
 .faq{grid-template-columns:1fr;gap:18px}
 .footer-inner{grid-template-columns:1fr;justify-items:center;gap:12px}
@@ -595,7 +596,7 @@ body{background:var(--bg);color:var(--ink);line-height:1.55}
       </div>
     </div>
     <div class="hero-visual">
-      <div data-fundt-phone data-assets="../assets/">
+      <div data-fundt-phone data-assets="../assets/" data-hint="Take it for a spin. No MoMo needed." data-hint-next="Now hit Send. Watch MoMo confirm it.">
         <img
           class="hero-mock"
           src="../assets/hero-iphone.png"

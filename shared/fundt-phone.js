@@ -17,6 +17,9 @@
   if (!mount) return;
 
   const ASSETS = mount.dataset.assets || "assets/";
+  // Note beside the phone. Step 1 invites a tap; the first tap swaps in step 2; opening Send retires it.
+  const HINT = mount.dataset.hint || "Take it for a spin. No MoMo needed.";
+  const HINT_NEXT = mount.dataset.hintNext || "Now hit Send. Watch MoMo confirm it.";
   const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const RWF = "R₣";
 
@@ -365,7 +368,10 @@
     </div>
   </div>
 </div>
-<p class="fp-caption" data-fp-caption>Demo data. Tap around, then hit Send.</p>`;
+<div class="fp-nudge" data-fp-nudge data-step="intro" aria-hidden="true">
+  <span class="fp-nudge-t">${esc(HINT)}</span>
+  <span class="fp-nudge-aw"><svg class="fp-nudge-a" viewBox="0 0 92 58" focusable="false"><path d="M4 6C24 2 44 10 50 24C54 34 44 40 40 33C36 26 50 20 62 28C72 35 78 42 84 46"/><path d="M80.4 36.7L84 46L74 46.3"/></svg></span>
+</div>`;
   }
 
   /* ------------------------------------------------------------------ */
@@ -1380,7 +1386,7 @@
     const el = e.target.closest("[data-act]");
     if (!el || !mount.contains(el)) return;
     const fn = ACTIONS[el.dataset.act];
-    if (fn) { dismissHint(); fn(el, e); }
+    if (fn) { advanceNudge(el.dataset.act); fn(el, e); }
   });
 
   // Text fields in the category form must not re-render the sheet (keeps focus).
@@ -1487,12 +1493,22 @@
 
   /* ---------- first-touch hint, clock, scaling ---------- */
 
-  function dismissHint() {
-    const cap = $("[data-fp-caption]");
-    if (cap && !cap.classList.contains("done")) {
-      cap.classList.add("done");
-      cap.textContent = "Demo data. Nothing leaves your browser.";
-    }
+  function advanceNudge(act) {
+    const n = $("[data-fp-nudge]");
+    if (!n || n.dataset.step === "done") return;
+    if (act === "fab") return retireNudge(n);
+    if (n.dataset.step !== "intro") return;
+    n.dataset.step = "next";
+    n.classList.add("swap");
+    setTimeout(() => {
+      n.querySelector(".fp-nudge-t").textContent = HINT_NEXT;
+      n.classList.remove("swap");
+    }, REDUCED ? 0 : 200);
+    n._t = setTimeout(() => retireNudge(n), 12000);
+  }
+  function retireNudge(n) {
+    clearTimeout(n._t);
+    n.dataset.step = "done";
   }
 
   function tickClock() {
